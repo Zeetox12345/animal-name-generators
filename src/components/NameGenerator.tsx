@@ -1,3 +1,4 @@
+
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
@@ -34,7 +35,6 @@ export const NameGenerator = ({
     const selectedNames: string[] = [];
     const usedIndexes = new Set();
 
-    // Get 10 unique random names
     while (selectedNames.length < Math.min(10, nameList.length)) {
       const randomIndex = Math.floor(Math.random() * nameList.length);
       if (!usedIndexes.has(randomIndex)) {
@@ -44,6 +44,14 @@ export const NameGenerator = ({
     }
 
     setGeneratedNames(selectedNames);
+    
+    // Scroll to the generated names
+    setTimeout(() => {
+      document.getElementById('generated-names')?.scrollIntoView({ 
+        behavior: 'smooth',
+        block: 'start'
+      });
+    }, 100);
   };
 
   return (
@@ -59,30 +67,8 @@ export const NameGenerator = ({
           </p>
         </section>
 
-        {/* Table of Contents */}
-        <Card className="p-6 mb-8">
-          <h2 className="text-xl font-semibold mb-4">Contents</h2>
-          <nav className="space-y-2">
-            <a href="#generator" className="block text-brand hover:text-brand-dark">
-              Generator & Toggle
-            </a>
-            <a href="#how-it-works" className="block text-brand hover:text-brand-dark">
-              How the Generator Works
-            </a>
-            <a href="#animal-info" className="block text-brand hover:text-brand-dark">
-              {animal} Information
-            </a>
-            <a href="#best-names" className="block text-brand hover:text-brand-dark">
-              Best Names Table
-            </a>
-            <a href="#other-generators" className="block text-brand hover:text-brand-dark">
-              Other Generators
-            </a>
-          </nav>
-        </Card>
-
         {/* Generator Section */}
-        <section id="generator" className="mb-12">
+        <section className="mb-12">
           <Card className="p-6">
             <div className="flex items-center justify-center gap-4 mb-6">
               <span className={`text-lg ${!isMale ? "text-gray-600" : ""}`}>
@@ -106,7 +92,7 @@ export const NameGenerator = ({
                 Generate Names
               </Button>
               {generatedNames.length > 0 && (
-                <div className="grid gap-2 animate-fade-in">
+                <div id="generated-names" className="grid grid-cols-2 gap-4 animate-fade-in">
                   {generatedNames.map((name, index) => (
                     <div 
                       key={index}
@@ -120,6 +106,25 @@ export const NameGenerator = ({
             </div>
           </Card>
         </section>
+
+        {/* Table of Contents */}
+        <Card className="p-6 mb-8">
+          <h2 className="text-xl font-semibold mb-4">Contents</h2>
+          <nav className="space-y-2">
+            <a href="#how-it-works" className="block text-brand hover:text-brand-dark">
+              How the Generator Works
+            </a>
+            <a href="#animal-info" className="block text-brand hover:text-brand-dark">
+              {animal} Information
+            </a>
+            <a href="#best-names" className="block text-brand hover:text-brand-dark">
+              Best Names Table
+            </a>
+            <a href="#other-generators" className="block text-brand hover:text-brand-dark">
+              Other Generators
+            </a>
+          </nav>
+        </Card>
 
         {/* How it Works */}
         <section id="how-it-works" className="mb-12">
