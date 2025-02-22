@@ -35,6 +35,7 @@ export const NameGenerator = ({
   const { toast } = useToast();
 
   const generateNames = async () => {
+    if (isLoading) return; // Prevent multiple clicks while loading
     setIsLoading(true);
     try {
       // Get the animal category id
@@ -45,7 +46,9 @@ export const NameGenerator = ({
         .maybeSingle();
 
       if (categoryError) throw categoryError;
-      if (!categoryData) throw new Error('Animal category not found');
+      if (!categoryData) {
+        throw new Error('Animal category not found');
+      }
 
       // Get 10 random names for the selected gender
       const { data: namesData, error: namesError } = await supabase
