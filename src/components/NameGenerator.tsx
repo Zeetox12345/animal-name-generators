@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
@@ -44,14 +43,6 @@ export const NameGenerator = ({
     }
 
     setGeneratedNames(selectedNames);
-    
-    // Scroll to the generated names
-    setTimeout(() => {
-      document.getElementById('generated-names')?.scrollIntoView({ 
-        behavior: 'smooth',
-        block: 'start'
-      });
-    }, 100);
   };
 
   return (
@@ -83,7 +74,7 @@ export const NameGenerator = ({
               </span>
             </div>
 
-            <div className="text-center">
+            <div className="text-center space-y-6">
               <Button
                 onClick={generateNames}
                 className="mb-6"
@@ -91,18 +82,23 @@ export const NameGenerator = ({
               >
                 Generate Names
               </Button>
-              {generatedNames.length > 0 && (
-                <div id="generated-names" className="grid grid-cols-2 gap-4 animate-fade-in">
-                  {generatedNames.map((name, index) => (
-                    <div 
-                      key={index}
-                      className="text-xl font-semibold text-primary p-2 rounded-md hover:bg-gray-50"
-                    >
-                      {name}
-                    </div>
-                  ))}
-                </div>
-              )}
+              
+              <div className="overflow-hidden">
+                {generatedNames.length > 0 && (
+                  <div 
+                    className="grid grid-cols-2 gap-4 animate-fade-in"
+                  >
+                    {generatedNames.map((name, index) => (
+                      <div 
+                        key={index}
+                        className="text-xl font-semibold text-primary p-2 rounded-md hover:bg-gray-50"
+                      >
+                        {name}
+                      </div>
+                    ))}
+                  </div>
+                )}
+              </div>
             </div>
           </Card>
         </section>
