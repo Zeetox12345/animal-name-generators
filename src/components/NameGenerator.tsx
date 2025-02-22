@@ -1,10 +1,9 @@
-
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Switch } from "@/components/ui/switch";
 import { Layout } from "./Layout";
-import { supabase } from "@/integrations/supabase/client";
+import { getRandomNames } from "@/data/nameGenerators";
 import { useToast } from "@/components/ui/use-toast";
 
 interface NameGeneratorProps {
@@ -34,51 +33,12 @@ export const NameGenerator = ({
   const [isLoading, setIsLoading] = useState(false);
   const { toast } = useToast();
 
-  const generateNames = async () => {
+  const generateNames = () => {
     if (isLoading) return; // Prevent multiple clicks while loading
     setIsLoading(true);
     try {
-      // Get the animal category id
-      const { data: categoryData, error: categoryError } = await supabase
-        .from('animal_categories')
-        .select('id')
-        .eq('name', animal.toLowerCase())
-        .maybeSingle();
-
-      if (categoryError) throw categoryError;
-      if (!categoryData) {
-        throw new Error('Animal category not found');
-      }
-
-      // Get 10 random names for the selected gender
-      const { data: namesData, error: namesError } = await supabase
-        .from('animal_names')
-        .select('name')
-        .eq('animal_category_id', categoryData.id)
-        .eq('gender', isMale ? 'male' : 'female')
-        .order('RANDOM()')
-        .limit(10);
-
-      if (namesError) throw namesError;
-
-      // If we don't have enough names in the database, fall back to our local data
-      if (!namesData || namesData.length === 0) {
-        const nameList = isMale ? bestNames.male : bestNames.female;
-        const selectedNames: string[] = [];
-        const usedIndexes = new Set();
-
-        while (selectedNames.length < Math.min(10, nameList.length)) {
-          const randomIndex = Math.floor(Math.random() * nameList.length);
-          if (!usedIndexes.has(randomIndex)) {
-            selectedNames.push(nameList[randomIndex]);
-            usedIndexes.add(randomIndex);
-          }
-        }
-
-        setGeneratedNames(selectedNames);
-      } else {
-        setGeneratedNames(namesData.map(n => n.name));
-      }
+      const names = getRandomNames(animal, isMale ? 'male' : 'female', 10);
+      setGeneratedNames(names);
     } catch (error) {
       console.error('Error generating names:', error);
       toast({
@@ -87,7 +47,7 @@ export const NameGenerator = ({
         variant: "destructive",
       });
       
-      // Fallback to local data
+      // Fallback to local data from bestNames
       const nameList = isMale ? bestNames.male : bestNames.female;
       const selectedNames = nameList.slice(0, 10);
       setGeneratedNames(selectedNames);
@@ -130,8 +90,9 @@ export const NameGenerator = ({
                 onClick={generateNames}
                 size="lg"
                 className="w-full sm:w-auto"
+                disabled={isLoading}
               >
-                Generate Names
+                {isLoading ? "Generating..." : "Generate Names"}
               </Button>
               
               <div className="overflow-hidden">
@@ -153,23 +114,25 @@ export const NameGenerator = ({
         </section>
 
         {/* Table of Contents */}
-        <Card className="p-4 sm:p-6 mb-6 sm:mb-8">
-          <h2 className="text-lg sm:text-xl font-semibold mb-3 sm:mb-4">Contents</h2>
-          <nav className="space-y-2">
-            <a href="#how-it-works" className="block text-brand hover:text-brand-dark">
-              How the Generator Works
-            </a>
-            <a href="#animal-info" className="block text-brand hover:text-brand-dark">
-              {animal} Information
-            </a>
-            <a href="#best-names" className="block text-brand hover:text-brand-dark">
-              Best Names Table
-            </a>
-            <a href="#other-generators" className="block text-brand hover:text-brand-dark">
-              Other Generators
-            </a>
-          </nav>
-        </Card>
+        <section className="mb-8 sm:mb-12">
+          <Card className="p-4 sm:p-6">
+            <h2 className="text-lg sm:text-xl font-semibold mb-3 sm:mb-4">Contents</h2>
+            <nav className="space-y-2">
+              <a href="#how-it-works" className="block text-brand hover:text-brand-dark">
+                How the Generator Works
+              </a>
+              <a href="#animal-info" className="block text-brand hover:text-brand-dark">
+                {animal} Information
+              </a>
+              <a href="#best-names" className="block text-brand hover:text-brand-dark">
+                Best Names Table
+              </a>
+              <a href="#other-generators" className="block text-brand hover:text-brand-dark">
+                Other Generators
+              </a>
+            </nav>
+          </Card>
+        </section>
 
         {/* How it Works */}
         <section id="how-it-works" className="mb-8 sm:mb-12">
