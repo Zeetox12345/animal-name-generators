@@ -47,51 +47,49 @@ export const NameGenerator = ({
 
   return (
     <Layout>
-      <div className="max-w-4xl mx-auto animate-fade-in">
+      <div className="max-w-4xl mx-auto px-4 sm:px-6 animate-fade-in">
         {/* Header */}
-        <section className="text-center mb-12">
-          <h1 className="text-4xl md:text-5xl font-bold text-primary mb-4">
+        <section className="text-center mb-8 sm:mb-12">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-primary mb-3 sm:mb-4">
             {animal} Name Generator
           </h1>
-          <p className="text-xl text-gray-600">
+          <p className="text-lg sm:text-xl text-gray-600">
             Generate the perfect name for your {animal.toLowerCase()}.
           </p>
         </section>
 
         {/* Generator Section */}
-        <section className="mb-12">
-          <Card className="p-6">
-            <div className="flex items-center justify-center gap-4 mb-6">
-              <span className={`text-lg ${!isMale ? "text-gray-600" : ""}`}>
+        <section className="mb-8 sm:mb-12">
+          <Card className="p-4 sm:p-6">
+            <div className="flex items-center justify-center gap-3 sm:gap-4 mb-4 sm:mb-6">
+              <span className={`text-base sm:text-lg ${!isMale ? "text-gray-600" : ""}`}>
                 Male
               </span>
               <Switch
                 checked={!isMale}
                 onCheckedChange={(checked) => setIsMale(!checked)}
               />
-              <span className={`text-lg ${isMale ? "text-gray-600" : ""}`}>
+              <span className={`text-base sm:text-lg ${isMale ? "text-gray-600" : ""}`}>
                 Female
               </span>
             </div>
 
-            <div className="text-center space-y-6">
+            <div className="text-center space-y-4 sm:space-y-6">
               <Button
                 onClick={generateNames}
-                className="mb-6"
                 size="lg"
+                className="w-full sm:w-auto"
               >
                 Generate Names
               </Button>
               
               <div className="overflow-hidden">
                 {generatedNames.length > 0 && (
-                  <div 
-                    className="grid grid-cols-2 gap-4 animate-fade-in"
-                  >
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4 animate-fade-in">
                     {generatedNames.map((name, index) => (
                       <div 
                         key={index}
-                        className="text-xl font-semibold text-primary p-2 rounded-md hover:bg-gray-50"
+                        className="text-lg sm:text-xl font-semibold text-primary p-2 rounded-md hover:bg-gray-50"
                       >
                         {name}
                       </div>
@@ -104,8 +102,8 @@ export const NameGenerator = ({
         </section>
 
         {/* Table of Contents */}
-        <Card className="p-6 mb-8">
-          <h2 className="text-xl font-semibold mb-4">Contents</h2>
+        <Card className="p-4 sm:p-6 mb-6 sm:mb-8">
+          <h2 className="text-lg sm:text-xl font-semibold mb-3 sm:mb-4">Contents</h2>
           <nav className="space-y-2">
             <a href="#how-it-works" className="block text-brand hover:text-brand-dark">
               How the Generator Works
@@ -123,10 +121,10 @@ export const NameGenerator = ({
         </Card>
 
         {/* How it Works */}
-        <section id="how-it-works" className="mb-12">
-          <h2 className="text-2xl font-semibold mb-4">How it Works</h2>
-          <Card className="p-6">
-            <p className="text-gray-600">
+        <section id="how-it-works" className="mb-8 sm:mb-12">
+          <h2 className="text-xl sm:text-2xl font-semibold mb-3 sm:mb-4">How it Works</h2>
+          <Card className="p-4 sm:p-6">
+            <p className="text-sm sm:text-base text-gray-600">
               Our {animal.toLowerCase()} name generator uses a carefully curated
               list of names that are perfect for your pet. Simply choose between
               male and female names, click the generate button, and discover the
@@ -136,12 +134,12 @@ export const NameGenerator = ({
         </section>
 
         {/* Animal Information */}
-        <section id="animal-info" className="mb-12">
-          <h2 className="text-2xl font-semibold mb-4">{animal} Information</h2>
-          <Card className="p-6">
+        <section id="animal-info" className="mb-8 sm:mb-12">
+          <h2 className="text-xl sm:text-2xl font-semibold mb-3 sm:mb-4">{animal} Information</h2>
+          <Card className="p-4 sm:p-6">
             <ul className="space-y-2">
               {facts.map((fact, index) => (
-                <li key={index} className="text-gray-600">
+                <li key={index} className="text-sm sm:text-base text-gray-600">
                   • {fact}
                 </li>
               ))}
@@ -150,17 +148,17 @@ export const NameGenerator = ({
         </section>
 
         {/* Best Names Table */}
-        <section id="best-names" className="mb-12">
-          <h2 className="text-2xl font-semibold mb-4">Best Names</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <section id="best-names" className="mb-8 sm:mb-12">
+          <h2 className="text-xl sm:text-2xl font-semibold mb-3 sm:mb-4">Best Names</h2>
+          <div className="grid grid-cols-1 gap-4 sm:gap-6">
             {Object.entries(bestNames).map(([category, names]) => (
-              <Card key={category} className="p-6">
-                <h3 className="text-lg font-semibold mb-3 capitalize">
+              <Card key={category} className="p-4 sm:p-6">
+                <h3 className="text-base sm:text-lg font-semibold mb-2 sm:mb-3 capitalize">
                   {category.replace(/([A-Z])/g, " $1").trim()} Names
                 </h3>
-                <ul className="space-y-2">
+                <ul className="space-y-1 sm:space-y-2">
                   {names.map((name, index) => (
-                    <li key={index} className="text-gray-600">
+                    <li key={index} className="text-sm sm:text-base text-gray-600">
                       • {name}
                     </li>
                   ))}
@@ -171,14 +169,16 @@ export const NameGenerator = ({
         </section>
 
         {/* Other Generators */}
-        <section id="other-generators">
-          <h2 className="text-2xl font-semibold mb-4">Other Generators</h2>
-          <Card className="p-6">
-            <div className="flex flex-wrap gap-4">
+        <section id="other-generators" className="mb-8 sm:mb-12">
+          <h2 className="text-xl sm:text-2xl font-semibold mb-3 sm:mb-4">Other Generators</h2>
+          <Card className="p-4 sm:p-6">
+            <div className="flex flex-wrap gap-2 sm:gap-4">
               {otherGenerators.map((generator) => (
                 <Button
                   key={generator.name}
                   variant="outline"
+                  size="sm"
+                  className="flex-grow sm:flex-grow-0"
                   asChild
                 >
                   <a href={generator.path}>{generator.name} Names</a>
