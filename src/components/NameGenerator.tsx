@@ -1,8 +1,11 @@
-import { useState } from "react";
+
+import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Switch } from "@/components/ui/switch";
 import { Layout } from "./Layout";
+import { supabase } from "@/integrations/supabase/client";
+import { useToast } from "@/components/ui/use-toast";
 
 interface NameGeneratorProps {
   animal: string;
@@ -28,21 +31,65 @@ export const NameGenerator = ({
 }: NameGeneratorProps) => {
   const [isMale, setIsMale] = useState(true);
   const [generatedNames, setGeneratedNames] = useState<string[]>([]);
+  const [isLoading, setIsLoading] = useState(false);
+  const { toast } = useToast();
 
-  const generateNames = () => {
-    const nameList = isMale ? bestNames.male : bestNames.female;
-    const selectedNames: string[] = [];
-    const usedIndexes = new Set();
+  const generateNames = async () => {
+    setIsLoading(true);
+    try {
+      // Get the animal category id
+      const { data: categoryData, error: categoryError } = await supabase
+        .from('animal_categories')
+        .select('id')
+        .eq('name', animal.toLowerCase())
+        .single();
 
-    while (selectedNames.length < Math.min(10, nameList.length)) {
-      const randomIndex = Math.floor(Math.random() * nameList.length);
-      if (!usedIndexes.has(randomIndex)) {
-        selectedNames.push(nameList[randomIndex]);
-        usedIndexes.add(randomIndex);
+      if (categoryError) throw categoryError;
+
+      // Get 10 random names for the selected gender
+      const { data: namesData, error: namesError } = await supabase
+        .from('animal_names')
+        .select('name')
+        .eq('animal_category_id', categoryData.id)
+        .eq('gender', isMale ? 'male' : 'female')
+        .order('RANDOM()')
+        .limit(10);
+
+      if (namesError) throw namesError;
+
+      // If we don't have enough names in the database, fall back to our local data
+      if (!namesData || namesData.length === 0) {
+        const nameList = isMale ? bestNames.male : bestNames.female;
+        const selectedNames: string[] = [];
+        const usedIndexes = new Set();
+
+        while (selectedNames.length < Math.min(10, nameList.length)) {
+          const randomIndex = Math.floor(Math.random() * nameList.length);
+          if (!usedIndexes.has(randomIndex)) {
+            selectedNames.push(nameList[randomIndex]);
+            usedIndexes.add(randomIndex);
+          }
+        }
+
+        setGeneratedNames(selectedNames);
+      } else {
+        setGeneratedNames(namesData.map(n => n.name));
       }
+    } catch (error) {
+      console.error('Error generating names:', error);
+      toast({
+        title: "Error",
+        description: "Failed to generate names. Using fallback name list.",
+        variant: "destructive",
+      });
+      
+      // Fallback to local data
+      const nameList = isMale ? bestNames.male : bestNames.female;
+      const selectedNames = nameList.slice(0, 10);
+      setGeneratedNames(selectedNames);
+    } finally {
+      setIsLoading(false);
     }
-
-    setGeneratedNames(selectedNames);
   };
 
   return (
