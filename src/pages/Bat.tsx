@@ -1,15 +1,23 @@
 
-import { NameGenerator } from "@/components/NameGenerator"
-import { Layout } from "@/components/Layout"
-import { NameImporter } from "@/components/NameImporter"
+import { NameGenerator } from "@/components/NameGenerator";
+import { animalData } from "@/data/animalNames";
 
-export default function BatPage() {
+const otherGenerators = [
+  { name: "Ant", path: "/ant" },
+  { name: "Alpaca", path: "/alpaca" },
+  { name: "Alligator", path: "/alligator" },
+  { name: "Ape", path: "/ape" }
+];
+
+const BatGenerator = () => {
   return (
-    <Layout>
-      <div className="container max-w-4xl space-y-8 py-8">
-        <NameImporter />
-        <NameGenerator animal="bat" />
-      </div>
-    </Layout>
-  )
-}
+    <NameGenerator
+      animal="Bat"
+      facts={animalData.bat.facts}
+      bestNames={animalData.bat.names}
+      otherGenerators={otherGenerators}
+    />
+  );
+};
+
+export default BatGenerator;
