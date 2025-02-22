@@ -27,12 +27,23 @@ export const NameGenerator = ({
   otherGenerators,
 }: NameGeneratorProps) => {
   const [isMale, setIsMale] = useState(true);
-  const [generatedName, setGeneratedName] = useState("");
+  const [generatedNames, setGeneratedNames] = useState<string[]>([]);
 
-  const generateName = () => {
+  const generateNames = () => {
     const nameList = isMale ? bestNames.male : bestNames.female;
-    const randomName = nameList[Math.floor(Math.random() * nameList.length)];
-    setGeneratedName(randomName);
+    const selectedNames: string[] = [];
+    const usedIndexes = new Set();
+
+    // Get 10 unique random names
+    while (selectedNames.length < Math.min(10, nameList.length)) {
+      const randomIndex = Math.floor(Math.random() * nameList.length);
+      if (!usedIndexes.has(randomIndex)) {
+        selectedNames.push(nameList[randomIndex]);
+        usedIndexes.add(randomIndex);
+      }
+    }
+
+    setGeneratedNames(selectedNames);
   };
 
   return (
@@ -88,15 +99,22 @@ export const NameGenerator = ({
 
             <div className="text-center">
               <Button
-                onClick={generateName}
-                className="mb-4"
+                onClick={generateNames}
+                className="mb-6"
                 size="lg"
               >
-                Generate Name
+                Generate Names
               </Button>
-              {generatedName && (
-                <div className="text-2xl font-semibold text-primary animate-fade-in">
-                  {generatedName}
+              {generatedNames.length > 0 && (
+                <div className="grid gap-2 animate-fade-in">
+                  {generatedNames.map((name, index) => (
+                    <div 
+                      key={index}
+                      className="text-xl font-semibold text-primary p-2 rounded-md hover:bg-gray-50"
+                    >
+                      {name}
+                    </div>
+                  ))}
                 </div>
               )}
             </div>

@@ -7,31 +7,31 @@ const animals = [
     name: "Ant",
     path: "/ant",
     description: "Generate creative names for your tiny yet mighty friends.",
-    image: "/placeholder.svg"
+    image: "/lovable-uploads/3f387938-ac2e-445a-9d46-4a087798fab5.png"
   },
   {
     name: "Alpaca",
     path: "/alpaca",
     description: "Find the perfect name for your fluffy companion.",
-    image: "/placeholder.svg"
+    image: "/lovable-uploads/94b2d1ab-0249-4919-a1ea-c88d84c932d9.png"
   },
   {
     name: "Alligator",
     path: "/alligator",
     description: "Create powerful names for these magnificent reptiles.",
-    image: "/placeholder.svg"
+    image: "/lovable-uploads/1539181d-4af1-4c00-9ddc-126f8faafc37.png"
   },
   {
     name: "Ape",
     path: "/ape",
     description: "Discover strong and intelligent names for primates.",
-    image: "/placeholder.svg"
+    image: "/lovable-uploads/6c466614-66d9-4d77-9d2e-e1eaa2f060ea.png"
   },
   {
     name: "Bat",
     path: "/bat",
     description: "Generate mysterious names for these nocturnal creatures.",
-    image: "/placeholder.svg"
+    image: "/lovable-uploads/ba5fb42e-98b2-494c-9e99-3373246970a9.png"
   }
 ];
 
