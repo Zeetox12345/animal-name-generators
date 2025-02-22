@@ -1,5 +1,5 @@
 
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Switch } from "@/components/ui/switch";
@@ -42,9 +42,10 @@ export const NameGenerator = ({
         .from('animal_categories')
         .select('id')
         .eq('name', animal.toLowerCase())
-        .single();
+        .maybeSingle();
 
       if (categoryError) throw categoryError;
+      if (!categoryData) throw new Error('Animal category not found');
 
       // Get 10 random names for the selected gender
       const { data: namesData, error: namesError } = await supabase

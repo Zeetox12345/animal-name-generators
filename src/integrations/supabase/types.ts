@@ -9,7 +9,56 @@ export type Json =
 export type Database = {
   public: {
     Tables: {
-      [_ in never]: never
+      animal_categories: {
+        Row: {
+          created_at: string | null
+          id: number
+          name: string
+        }
+        Insert: {
+          created_at?: string | null
+          id?: number
+          name: string
+        }
+        Update: {
+          created_at?: string | null
+          id?: number
+          name?: string
+        }
+        Relationships: []
+      }
+      animal_names: {
+        Row: {
+          animal_category_id: number | null
+          created_at: string | null
+          gender: string
+          id: number
+          name: string
+        }
+        Insert: {
+          animal_category_id?: number | null
+          created_at?: string | null
+          gender: string
+          id?: number
+          name: string
+        }
+        Update: {
+          animal_category_id?: number | null
+          created_at?: string | null
+          gender?: string
+          id?: number
+          name?: string
+        }
+        Relationships: [
+          {
+            foreignKeyName: "animal_names_animal_category_id_fkey"
+            columns: ["animal_category_id"]
+            isOneToOne: false
+            referencedRelation: "animal_categories"
+            referencedColumns: ["id"]
+          },
+        ]
+      }
     }
     Views: {
       [_ in never]: never
