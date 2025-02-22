@@ -1,0 +1,8 @@
+
+{
+  "animal": "ant",
+  "names": {
+    "male": ["Name1", "Name2", "Name3"],
+    "female": ["Name4", "Name5", "Name6"]
+  }
+}
