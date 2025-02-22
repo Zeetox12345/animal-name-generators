@@ -2,19 +2,21 @@
 import { NameGenerator } from "@/components/NameGenerator";
 
 const facts = [
-  "Alligators have been around for over 37 million years",
-  "They can go through 2,000-3,000 teeth in a lifetime",
-  "Adult alligators can go 1-2 years without eating",
-  "Female alligators are protective mothers",
-  "They can run up to 11 mph on land"
+  "Alligators have survived on Earth for over 37 million years",
+  "They can replace up to 3,000 teeth throughout their lifetime",
+  "Adult alligators can go up to two years without eating",
+  "Female alligators are extremely protective mothers",
+  "Alligators can run up to 11 mph on land and swim up to 20 mph",
+  "They have the strongest bite force of any living animal",
+  "Alligators can live up to 50 years in the wild"
 ];
 
 const bestNames = {
-  descriptive: ["Rex the Ruler", "Titan the Fierce", "Shadow the Silent"],
-  funny: ["Snappy", "Gator-ade", "Croc-star"],
-  cute: ["Chompy", "Scales", "Ziggy"],
-  male: ["Ajax", "Apex", "Ares", "Axel", "Atlas"],
-  female: ["Athena", "Artemis", "Aurora", "Astra", "Alma"]
+  descriptive: ["Rex the Ruler", "Titan the Fierce", "Shadow the Silent", "Storm the Swift", "Thunder the Mighty"],
+  funny: ["Snappy", "Gator-ade", "Croc-star", "Sir Chomps", "Scale Master"],
+  cute: ["Chompy", "Scales", "Ziggy", "Snap", "Pepper"],
+  male: ["Ajax", "Apex", "Ares", "Axel", "Atlas", "Aztec", "Arrow", "Avalon", "Ace", "Alpha"],
+  female: ["Athena", "Artemis", "Aurora", "Astra", "Alma", "Aspen", "Azure", "Amara", "Alba", "Alexandria"]
 };
 
 const otherGenerators = [
