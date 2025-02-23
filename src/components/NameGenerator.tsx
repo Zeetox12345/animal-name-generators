@@ -168,7 +168,9 @@ export const NameGenerator = ({
             {Object.entries(bestNames).map(([category, names]) => (
               <Card key={category} className="p-4 sm:p-6">
                 <h3 className="text-base sm:text-lg font-semibold mb-2 sm:mb-3 capitalize">
-                  {category.replace(/([A-Z])/g, " $1").trim()} Names
+                  {category === 'male' ? 'Best Male Names' :
+                   category === 'female' ? 'Best Female Names' :
+                   category.replace(/([A-Z])/g, " $1").trim() + ' Names'}
                 </h3>
                 <ul className="space-y-1 sm:space-y-2">
                   {names.map((name, index) => (

@@ -1,4 +1,3 @@
-
 import { Layout } from "@/components/Layout";
 import { Link } from "react-router-dom";
 
@@ -32,6 +31,36 @@ const animals = [
     path: "/bat",
     description: "Generate mysterious names for these nocturnal creatures.",
     image: "/lovable-uploads/ba5fb42e-98b2-494c-9e99-3373246970a9.png"
+  },
+  {
+    name: "Bear",
+    path: "/bear",
+    description: "Create powerful names for these majestic creatures.",
+    image: "/lovable-uploads/hoda-name.png"
+  },
+  {
+    name: "Bee",
+    path: "/bee",
+    description: "Generate buzzing names for these busy pollinators.",
+    image: "/lovable-uploads/geazye.png"
+  },
+  {
+    name: "Beetle",
+    path: "/beetle",
+    description: "Find unique names for these fascinating insects.",
+    image: "/lovable-uploads/geopiny.png"
+  },
+  {
+    name: "Bird",
+    path: "/bird",
+    description: "Discover melodious names for your feathered friends.",
+    image: "/lovable-uploads/bird.png"
+  },
+  {
+    name: "Butterfly",
+    path: "/butterfly",
+    description: "Create beautiful names for these graceful insects.",
+    image: "/lovable-uploads/cenpafy.png"
   }
 ];
 

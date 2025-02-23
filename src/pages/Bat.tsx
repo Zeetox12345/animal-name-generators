@@ -1,6 +1,7 @@
 import { NameGenerator } from "@/components/NameGenerator";
 import { animalData } from "@/data/animalNames";
 import { Helmet } from "react-helmet-async";
+import { useEffect } from "react";
 
 const otherGenerators = [
   { name: "Ant", path: "/ant" },
@@ -10,13 +11,17 @@ const otherGenerators = [
 ];
 
 const BatGenerator = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <>
       <Helmet>
         <title>Bat Name Generator - 10,000+ Unique Bat Names | Find The Perfect Name</title>
         <meta 
           name="description" 
-          content="Looking for the perfect bat name? Our Bat Name Generator offers 10,000+ unique and creative names inspired by nocturnal creatures. Perfect for pet bats, characters, or creative projects!" 
+          content="Discover the perfect bat name with our Bat Name Generator! Browse through 10,000+ unique and creative names inspired by these fascinating creatures. Perfect for pet bats, characters, or creative projects!" 
         />
         <meta property="og:title" content="Bat Name Generator - Find The Perfect Bat Name" />
         <meta 

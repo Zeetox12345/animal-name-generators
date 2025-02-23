@@ -4,6 +4,11 @@ import alpacaNames from './alpaca_names.json';
 import batNames from './bat_names.json';
 import alligatorNames from './alligator_names.json';
 import apeNames from './ape_names.json';
+import bearNames from './bear_names.json';
+import beeNames from './bee_names.json';
+import beetleNames from './beetle_names.json';
+import birdNames from './bird_names.json';
+import butterflyNames from './butterfly_names.json';
 
 // Map to store all loaded name generators
 const nameGenerators: Record<string, AnimalNames> = {
@@ -12,6 +17,11 @@ const nameGenerators: Record<string, AnimalNames> = {
   bat: batNames as AnimalNames,
   alligator: alligatorNames as AnimalNames,
   ape: apeNames as AnimalNames,
+  bear: bearNames as AnimalNames,
+  bee: beeNames as AnimalNames,
+  beetle: beetleNames as AnimalNames,
+  bird: birdNames as AnimalNames,
+  butterfly: butterflyNames as AnimalNames,
 };
 
 /**

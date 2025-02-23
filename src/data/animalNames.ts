@@ -1,3 +1,18 @@
+import antNames from './ant_names.json';
+import alpacaNames from './alpaca_names.json';
+import alligatorNames from './alligator_names.json';
+import apeNames from './ape_names.json';
+import bearNames from './bear_names.json';
+import beeNames from './bee_names.json';
+import beetleNames from './beetle_names.json';
+import birdNames from './bird_names.json';
+import butterflyNames from './butterfly_names.json';
+
+// Helper function to get random names from an array
+function getRandomNames(names: string[], count: number): string[] {
+  const shuffled = [...names].sort(() => 0.5 - Math.random());
+  return shuffled.slice(0, count);
+}
 
 export interface AnimalNameLists {
   descriptive: string[];
@@ -60,50 +75,8 @@ export const animalData: Record<string, AnimalData> = {
         "Bean",
         "Scout"
       ],
-      male: [
-        "Anthony",
-        "Armstrong",
-        "Atlas",
-        "Ace",
-        "Ajax",
-        "Ash",
-        "Axel",
-        "Archer",
-        "Alpine",
-        "Atom",
-        "Antler",
-        "Admiral",
-        "Alpha",
-        "Armor",
-        "August",
-        "Azure",
-        "Apex",
-        "Arrow",
-        "Avalon",
-        "Aether"
-      ],
-      female: [
-        "Antoinette",
-        "Aurora",
-        "Amber",
-        "April",
-        "Aria",
-        "Autumn",
-        "Ash",
-        "Astrid",
-        "Azalea",
-        "Antigua",
-        "Artemis",
-        "Athena",
-        "Amara",
-        "Alba",
-        "Astra",
-        "Aspen",
-        "Azure",
-        "Angel",
-        "Aura",
-        "Aster"
-      ]
+      male: getRandomNames(antNames.names.male, 30),
+      female: getRandomNames(antNames.names.female, 30)
     }
   },
   bat: {
@@ -246,50 +219,8 @@ export const animalData: Record<string, AnimalData> = {
         "Pudding",
         "Muffin"
       ],
-      male: [
-        "Apollo",
-        "Atlas",
-        "Andes",
-        "Astro",
-        "Alpine",
-        "Aspen",
-        "August",
-        "Aztec",
-        "Avalon",
-        "Aurora",
-        "Archer",
-        "Axel",
-        "Alto",
-        "Aegis",
-        "Aether",
-        "Apex",
-        "Azure",
-        "Ash",
-        "Argon",
-        "Arctic"
-      ],
-      female: [
-        "Aurora",
-        "Aria",
-        "Autumn",
-        "Angel",
-        "Alba",
-        "Aspen",
-        "Athena",
-        "Amara",
-        "Astra",
-        "Azalea",
-        "Artemis",
-        "Astrid",
-        "Avalon",
-        "Amber",
-        "April",
-        "Azure",
-        "Arden",
-        "Arwen",
-        "Aura",
-        "Alpine"
-      ]
+      male: getRandomNames(alpacaNames.names.male, 30),
+      female: getRandomNames(alpacaNames.names.female, 30)
     }
   },
   ape: {
@@ -339,50 +270,8 @@ export const animalData: Record<string, AnimalData> = {
         "Bean",
         "Mochi"
       ],
-      male: [
-        "Atlas",
-        "Ares",
-        "Apollo",
-        "Axel",
-        "Ajax",
-        "Ash",
-        "Alpha",
-        "Archer",
-        "August",
-        "Asher",
-        "Ace",
-        "Aegis",
-        "Aether",
-        "Apex",
-        "Azure",
-        "Aurora",
-        "Arctic",
-        "Avalon",
-        "Alto",
-        "Argon"
-      ],
-      female: [
-        "Athena",
-        "Aurora",
-        "Aria",
-        "Amara",
-        "Alba",
-        "Autumn",
-        "Aspen",
-        "Astra",
-        "Azure",
-        "Artemis",
-        "Angel",
-        "Astrid",
-        "Avalon",
-        "Amber",
-        "April",
-        "Aura",
-        "Arden",
-        "Alpine",
-        "Azalea",
-        "Arwen"
-      ]
+      male: getRandomNames(apeNames.names.male, 30),
+      female: getRandomNames(apeNames.names.female, 30)
     }
   },
   alligator: {
@@ -432,50 +321,263 @@ export const animalData: Record<string, AnimalData> = {
         "Peanut",
         "Mochi"
       ],
-      male: [
-        "Ajax",
-        "Apex",
-        "Ares",
-        "Axel",
-        "Atlas",
-        "Aztec",
-        "Arrow",
-        "Avalon",
-        "Ace",
-        "Alpha",
-        "Apollo",
-        "Aegis",
-        "Aether",
-        "Arctic",
-        "Ash",
-        "Asher",
-        "August",
-        "Azure",
-        "Alto",
-        "Argon"
+      male: getRandomNames(alligatorNames.names.male, 30),
+      female: getRandomNames(alligatorNames.names.female, 30)
+    }
+  },
+  bear: {
+    facts: [
+      "Bears are incredibly strong and can run at speeds of up to 35 mph",
+      "They have an excellent sense of smell, up to 7 times better than a bloodhound",
+      "Bears are highly intelligent and have excellent memory",
+      "They can stand up and walk on their hind legs",
+      "Bears are excellent swimmers and can climb trees",
+      "Most bears are omnivores, eating both plants and meat",
+      "Bears can sleep for up to 7 months during winter hibernation"
+    ],
+    names: {
+      descriptive: [
+        "Grizzly the Mighty",
+        "Thunder the Strong",
+        "Shadow the Silent",
+        "Forest King",
+        "Mountain Lord",
+        "River Guardian",
+        "Storm the Fierce",
+        "Frost the Brave",
+        "Cave Master",
+        "Highland Chief"
       ],
-      female: [
-        "Athena",
-        "Artemis",
-        "Aurora",
-        "Astra",
-        "Alma",
-        "Aspen",
-        "Azure",
-        "Amara",
-        "Alba",
-        "Alexandria",
+      funny: [
+        "Sir Grizzlington",
+        "Baron von Bear",
+        "Captain Honeypaws",
+        "Lord Fuzzyface",
+        "Duke of Salmon",
+        "Sir Snooze-a-lot",
+        "Professor Pawsome",
+        "Count Cubby",
+        "King Kodiak",
+        "Doctor Bearington"
+      ],
+      cute: [
+        "Honey",
+        "Teddy",
+        "Bubbles",
+        "Fuzzy",
+        "Cubby",
+        "Snuggles",
+        "Peanut",
+        "Cookie",
+        "Marshmallow",
+        "Gummy"
+      ],
+      male: getRandomNames(bearNames.names.male, 30),
+      female: getRandomNames(bearNames.names.female, 30)
+    }
+  },
+  bee: {
+    facts: [
+      "Bees can recognize human faces",
+      "They do a special dance to communicate with other bees",
+      "A single bee can visit up to 5,000 flowers in a day",
+      "Honey bees never sleep",
+      "Bees can fly at speeds of up to 20 mph",
+      "They are responsible for pollinating about one-third of the world's food crops",
+      "A honey bee visits between 50-100 flowers during one collection trip"
+    ],
+    names: {
+      descriptive: [
+        "Buzz the Swift",
+        "Nectar Hunter",
+        "Pollen Seeker",
+        "Queen's Guard",
+        "Hive Defender",
+        "Flower Dancer",
+        "Wing Warrior",
+        "Honey Maker",
+        "Garden Scout",
+        "Royal Worker"
+      ],
+      funny: [
+        "Sir Stings-a-lot",
+        "Queen Bee-utiful",
+        "Lord Buzzington",
+        "Captain Honeycomb",
+        "Duke of Nectar",
+        "Professor Pollen",
+        "Doctor Bumble",
+        "Lady Buzz-a-lot",
+        "Count Stinger",
+        "Baron von Bee"
+      ],
+      cute: [
+        "Bumble",
+        "Honey",
+        "Buzzy",
+        "Sunny",
+        "Pollen",
+        "Flower",
+        "Nectar",
+        "Daisy",
+        "Blossom",
+        "Sweet"
+      ],
+      male: getRandomNames(beeNames.names.male, 30),
+      female: getRandomNames(beeNames.names.female, 30)
+    }
+  },
+  beetle: {
+    facts: [
+      "Beetles make up about 25% of all known animal species",
+      "Some beetles can lift up to 850 times their own body weight",
+      "Beetles have existed for over 300 million years",
+      "They come in a wide variety of colors and patterns",
+      "Some beetles produce light through bioluminescence",
+      "Beetles play important roles in pollination and decomposition",
+      "There are over 350,000 known species of beetles"
+    ],
+    names: {
+      descriptive: [
+        "Shell Master",
+        "Ground Warrior",
+        "Forest Crawler",
+        "Armor Bearer",
+        "Earth Explorer",
+        "Night Walker",
+        "Shell Guardian",
+        "Leaf Seeker",
+        "Wood Wanderer",
+        "Stone Traveler"
+      ],
+      funny: [
+        "Sir Scuttles",
+        "Captain Crawly",
+        "Lord Legs-a-lot",
+        "Duke of Dirt",
+        "Professor Shell",
+        "Doctor Antenna",
+        "Baron Beetle",
+        "Count Carapace",
+        "King Mandible",
+        "Lady Bug-a-lot"
+      ],
+      cute: [
+        "Spotty",
+        "Shell",
+        "Dots",
+        "Crawly",
+        "Shiny",
+        "Tiny",
+        "Sparkle",
+        "Jewel",
+        "Glitter",
+        "Shimmer"
+      ],
+      male: getRandomNames(beetleNames.names.male, 30),
+      female: getRandomNames(beetleNames.names.female, 30)
+    }
+  },
+  bird: {
+    facts: [
+      "Birds are the only living creatures that have feathers",
+      "Some birds can mimic human speech and other sounds",
+      "The fastest bird is the peregrine falcon, diving at speeds over 240 mph",
+      "Birds have hollow bones to help them fly",
+      "Some birds can sleep with one eye open",
+      "Birds have excellent color vision and can see ultraviolet light",
+      "The smallest bird is the bee hummingbird, only 2 inches long"
+    ],
+    names: {
+      descriptive: [
+        "Sky Soarer",
+        "Wind Rider",
+        "Cloud Dancer",
+        "Storm Flyer",
+        "Dawn Singer",
+        "Air Master",
+        "Wing Commander",
+        "Feather Swift",
+        "Song Weaver",
+        "Star Chaser"
+      ],
+      funny: [
+        "Sir Tweets-a-lot",
+        "Captain Feathers",
+        "Lord Wing-ding",
+        "Duke of Dawn",
+        "Professor Plume",
+        "Doctor Birdsong",
+        "Baron Beaky",
+        "Count Chirps",
+        "King Warble",
+        "Lady Songbird"
+      ],
+      cute: [
+        "Chirpy",
+        "Feather",
+        "Song",
+        "Flutter",
+        "Sunny",
+        "Sky",
+        "Cloud",
+        "Star",
+        "Dawn",
+        "Angel"
+      ],
+      male: getRandomNames(birdNames.names.male, 30),
+      female: getRandomNames(birdNames.names.female, 30)
+    }
+  },
+  butterfly: {
+    facts: [
+      "Butterflies taste with their feet",
+      "They can see ultraviolet light that humans cannot see",
+      "A butterfly's wingspan ranges from 1/2 inch to 11 inches",
+      "They can fly at speeds of 12-25 miles per hour",
+      "Butterflies go through four stages of transformation",
+      "Some butterflies migrate thousands of miles",
+      "They have a lifespan of just 2-4 weeks on average"
+    ],
+    names: {
+      descriptive: [
+        "Wing Dancer",
+        "Silk Flyer",
+        "Garden Spirit",
+        "Flower Seeker",
+        "Rainbow Glider",
+        "Petal Drifter",
+        "Sun Chaser",
+        "Wind Rider",
+        "Color Weaver",
+        "Sky Painter"
+      ],
+      funny: [
+        "Sir Flutter-by",
+        "Lady Wing-ding",
+        "Duke of Dots",
+        "Professor Pollen",
+        "Doctor Dazzle",
+        "Baron Butterfly",
+        "Count Colors",
+        "Queen Flutter",
+        "Princess Petals",
+        "Lord Lepidoptera"
+      ],
+      cute: [
+        "Flutter",
+        "Sparkle",
+        "Rainbow",
+        "Sunny",
+        "Glitter",
+        "Shimmer",
+        "Twinkle",
         "Angel",
-        "Astrid",
-        "Autumn",
-        "Avalon",
-        "Amber",
-        "April",
-        "Aura",
-        "Arden",
-        "Alpine",
-        "Azalea"
-      ]
+        "Star",
+        "Blossom"
+      ],
+      male: getRandomNames(butterflyNames.names.male, 30),
+      female: getRandomNames(butterflyNames.names.female, 30)
     }
   }
 };

@@ -1,6 +1,7 @@
 import { NameGenerator } from "@/components/NameGenerator";
 import { animalData } from "@/data/animalNames";
 import { Helmet } from "react-helmet-async";
+import { useEffect } from "react";
 
 const otherGenerators = [
   { name: "Alpaca", path: "/alpaca" },
@@ -10,6 +11,10 @@ const otherGenerators = [
 ];
 
 const AntGenerator = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <>
       <Helmet>
