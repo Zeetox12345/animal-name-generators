@@ -7,4 +7,4 @@ export interface AnimalNames {
 }
 
 // Type to represent all available animal generators
-export type AnimalType = 'ant' | 'alpaca' | 'bat' | 'alligator' | 'ape' | string; // Add more animal types as they are added 
+export type AnimalType = 'ant' | 'alpaca' | 'bat' | 'alligator' | 'ape' | 'bear' | 'bee' | 'beetle' | 'bird' | 'butterfly' | 'capybara' | 'cat' | 'chicken' | 'chameleon' | 'chipmunk' | string; // Add more animal types as they are added 

@@ -61,6 +61,36 @@ const animals = [
     path: "/butterfly",
     description: "Create beautiful names for these graceful insects.",
     image: "/lovable-uploads/cenpafy.png"
+  },
+  {
+    name: "Capybara",
+    path: "/capybara",
+    description: "Find friendly names for these gentle giants.",
+    image: "/lovable-uploads/capybara.png"
+  },
+  {
+    name: "Cat",
+    path: "/cat",
+    description: "Generate purr-fect names for your feline friend.",
+    image: "/lovable-uploads/cat.png"
+  },
+  {
+    name: "Chicken",
+    path: "/chicken",
+    description: "Create fun names for your feathered farmyard friends.",
+    image: "/lovable-uploads/chicken.png"
+  },
+  {
+    name: "Chameleon",
+    path: "/chameleon",
+    description: "Discover colorful names for these amazing reptiles.",
+    image: "/lovable-uploads/chameleon.png"
+  },
+  {
+    name: "Chipmunk",
+    path: "/chipmunk",
+    description: "Find cute names for these adorable creatures.",
+    image: "/lovable-uploads/chipmunk.png"
   }
 ];
 

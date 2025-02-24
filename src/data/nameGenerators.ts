@@ -9,6 +9,11 @@ import beeNames from './bee_names.json';
 import beetleNames from './beetle_names.json';
 import birdNames from './bird_names.json';
 import butterflyNames from './butterfly_names.json';
+import capybaraNames from './capybara_names.json';
+import catNames from './cat_names.json';
+import chickenNames from './chicken_names.json';
+import chameleonNames from './chameleon_names.json';
+import chipmunkNames from './chipmunk_names.json';
 
 // Map to store all loaded name generators
 const nameGenerators: Record<string, AnimalNames> = {
@@ -22,7 +27,23 @@ const nameGenerators: Record<string, AnimalNames> = {
   beetle: beetleNames as AnimalNames,
   bird: birdNames as AnimalNames,
   butterfly: butterflyNames as AnimalNames,
+  capybara: capybaraNames as AnimalNames,
+  cat: catNames as AnimalNames,
+  chicken: chickenNames as AnimalNames,
+  chameleon: chameleonNames as AnimalNames,
+  chipmunk: chipmunkNames as AnimalNames,
 };
+
+/**
+ * Generates a random name for the specified animal
+ * @param animal The type of animal to generate a name for
+ * @returns A random name
+ */
+export function generateAnimalName(animal: AnimalType): string {
+  const gender = Math.random() < 0.5 ? 'male' : 'female';
+  const names = getRandomNames(animal, gender, 1);
+  return names[0] || 'No name found';
+}
 
 /**
  * Gets multiple random names from the specified animal generator and gender

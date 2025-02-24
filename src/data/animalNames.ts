@@ -7,6 +7,11 @@ import beeNames from './bee_names.json';
 import beetleNames from './beetle_names.json';
 import birdNames from './bird_names.json';
 import butterflyNames from './butterfly_names.json';
+import capybaraNames from './capybara_names.json';
+import catNames from './cat_names.json';
+import chickenNames from './chicken_names.json';
+import chameleonNames from './chameleon_names.json';
+import chipmunkNames from './chipmunk_names.json';
 
 // Helper function to get random names from an array
 function getRandomNames(names: string[], count: number): string[] {
@@ -578,6 +583,261 @@ export const animalData: Record<string, AnimalData> = {
       ],
       male: getRandomNames(butterflyNames.names.male, 30),
       female: getRandomNames(butterflyNames.names.female, 30)
+    }
+  },
+  capybara: {
+    facts: [
+      "Capybaras are the largest rodents in the world",
+      "They are semi-aquatic mammals and excellent swimmers",
+      "They are highly social animals and live in groups",
+      "Capybaras can sleep in water, keeping their nose above the surface",
+      "They are herbivores and eat mainly grass",
+      "They can hold their breath underwater for up to 5 minutes",
+      "Capybaras are native to South America"
+    ],
+    names: {
+      descriptive: [
+        "River King",
+        "Marsh Walker",
+        "Gentle Giant",
+        "Water Prince",
+        "Grass Grazer",
+        "Swim Master",
+        "Social Sage",
+        "Meadow Lord",
+        "Pool Pioneer",
+        "Wetland Wanderer"
+      ],
+      funny: [
+        "Sir Swims-a-lot",
+        "Captain Chonk",
+        "Lord Fluffington",
+        "Duke of Puddle",
+        "Professor Paddle",
+        "Sir Splashes",
+        "Baron von Bath",
+        "Count Chillax",
+        "King Lounge",
+        "Master Munch"
+      ],
+      cute: [
+        "Puddles",
+        "Bubbles",
+        "Splash",
+        "Marshy",
+        "Coconut",
+        "Peanut",
+        "Waddles",
+        "Nibbles",
+        "Mochi",
+        "Cookie"
+      ],
+      male: getRandomNames(capybaraNames.names.male, 30),
+      female: getRandomNames(capybaraNames.names.female, 30)
+    }
+  },
+  cat: {
+    facts: [
+      "Cats spend 70% of their lives sleeping",
+      "A cat's nose print is unique, like a human's fingerprint",
+      "Cats can rotate their ears 180 degrees",
+      "They can make over 100 different vocal sounds",
+      "A cat's whiskers are about the same width as its body",
+      "Cats can't taste sweetness",
+      "They can run at speeds of up to 30 mph"
+    ],
+    names: {
+      descriptive: [
+        "Shadow Walker",
+        "Midnight Hunter",
+        "Luna Whisper",
+        "Storm Chaser",
+        "Silent Stalker",
+        "Night Watcher",
+        "Dusk Runner",
+        "Moon Dancer",
+        "Star Gazer",
+        "Dawn Patrol"
+      ],
+      funny: [
+        "Sir Meow-a-lot",
+        "Lord Whiskertons",
+        "Captain Pawsome",
+        "Professor Purrington",
+        "Duke of Naps",
+        "Lady Litterbox",
+        "Count Catula",
+        "Baron von Scratch",
+        "Princess Purrfect",
+        "Doctor Whiskerpants"
+      ],
+      cute: [
+        "Mochi",
+        "Sushi",
+        "Biscuit",
+        "Waffle",
+        "Pickle",
+        "Noodle",
+        "Cookie",
+        "Muffin",
+        "Pudding",
+        "Dumpling"
+      ],
+      male: getRandomNames(catNames.names.male, 30),
+      female: getRandomNames(catNames.names.female, 30)
+    }
+  },
+  chicken: {
+    facts: [
+      "Chickens can remember over 100 different faces of people or animals",
+      "They can dream, just like humans and other mammals",
+      "A mother hen talks to her chicks while they're still in the eggs",
+      "Chickens can run up to 9 miles per hour",
+      "They have full-color vision and can see more colors than humans",
+      "Chickens are the closest living relatives to the T-Rex",
+      "They can learn from each other and can be taught tricks"
+    ],
+    names: {
+      descriptive: [
+        "Feather King",
+        "Coop Commander",
+        "Dawn Caller",
+        "Yard Patrol",
+        "Flock Leader",
+        "Nest Guardian",
+        "Roost Master",
+        "Farm Sentinel",
+        "Meadow Scout",
+        "Barnyard Boss"
+      ],
+      funny: [
+        "Colonel Sanders",
+        "Sir Clucks-a-lot",
+        "Mother Clucker",
+        "Captain Coop",
+        "Lord of the Wings",
+        "Duke of Yolk",
+        "Princess Layer",
+        "Count Chickula",
+        "Baron von Bawk",
+        "Lady Omelet"
+      ],
+      cute: [
+        "Nugget",
+        "Peeps",
+        "Sunny",
+        "Pip",
+        "Chirpy",
+        "Fluffy",
+        "Buttercup",
+        "Dumpling",
+        "Noodle",
+        "Biscuit"
+      ],
+      male: getRandomNames(chickenNames.names.male, 30),
+      female: getRandomNames(chickenNames.names.female, 30)
+    }
+  },
+  chameleon: {
+    facts: [
+      "Chameleons can move their eyes independently of each other",
+      "Their tongues can be twice the length of their body",
+      "They change color to communicate, not just for camouflage",
+      "Most chameleons have prehensile tails that act like a fifth limb",
+      "They can see in both ultraviolet and visible light",
+      "Some species can shoot their tongues out at 0.07 seconds",
+      "They don't have external ears but can still detect sound"
+    ],
+    names: {
+      descriptive: [
+        "Color Master",
+        "Rainbow King",
+        "Scale Shifter",
+        "Spectrum Lord",
+        "Prism Prince",
+        "Hue Hunter",
+        "Shade Walker",
+        "Tint Tracker",
+        "Chrome Commander",
+        "Palette Pioneer"
+      ],
+      funny: [
+        "Sir Changes-a-lot",
+        "Captain Rainbow",
+        "Professor Prismatic",
+        "Doctor Spectrum",
+        "Lord of Hues",
+        "Duke of Disguise",
+        "Baron von Blend",
+        "Count Colorful",
+        "Master of Mimicry",
+        "King Kaleidoscope"
+      ],
+      cute: [
+        "Rainbow",
+        "Skittles",
+        "Prism",
+        "Pixel",
+        "Ziggy",
+        "Bubble",
+        "Sprinkles",
+        "Sparkle",
+        "Twinkle",
+        "Marble"
+      ],
+      male: getRandomNames(chameleonNames.names.male, 30),
+      female: getRandomNames(chameleonNames.names.female, 30)
+    }
+  },
+  chipmunk: {
+    facts: [
+      "Chipmunks can store up to 8 pounds of food in their burrows",
+      "They can climb trees headfirst and swim",
+      "Their cheek pouches can stretch to three times the size of their head",
+      "They're excellent diggers and create complex tunnel systems",
+      "Chipmunks hibernate but wake up every few days to eat",
+      "They can run up to 21 miles per hour",
+      "Each chipmunk has its own unique voice and call"
+    ],
+    names: {
+      descriptive: [
+        "Acorn Hunter",
+        "Forest Scout",
+        "Burrow King",
+        "Swift Runner",
+        "Cheek Stuffer",
+        "Tree Climber",
+        "Nut Gatherer",
+        "Woodland Prince",
+        "Trail Blazer",
+        "Grove Guardian"
+      ],
+      funny: [
+        "Sir Stuffs-a-lot",
+        "Captain Cheeks",
+        "Lord Nutkin",
+        "Duke of Snacks",
+        "Professor Peanut",
+        "Baron von Burrow",
+        "Count Chatter",
+        "Master Munchkin",
+        "Doctor Digger",
+        "King Kernel"
+      ],
+      cute: [
+        "Peanut",
+        "Acorn",
+        "Nibbles",
+        "Cookie",
+        "Nutkin",
+        "Chip",
+        "Pip",
+        "Scout",
+        "Ziggy",
+        "Munchkin"
+      ],
+      male: getRandomNames(chipmunkNames.names.male, 30),
+      female: getRandomNames(chipmunkNames.names.female, 30)
     }
   }
 };
