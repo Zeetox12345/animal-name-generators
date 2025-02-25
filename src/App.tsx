@@ -2,10 +2,8 @@ import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { HelmetProvider } from "react-helmet-async";
-import { useEffect } from "react";
-import { trackPageView } from "./utils/analytics";
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 import Ant from "./pages/Ant";
@@ -26,18 +24,6 @@ import Chipmunk from "./pages/Chipmunk";
 
 const queryClient = new QueryClient();
 
-// Analytics wrapper component to track page views
-const AnalyticsWrapper = ({ children }: { children: React.ReactNode }) => {
-  const location = useLocation();
-  
-  useEffect(() => {
-    // Track page view when location changes
-    trackPageView(location.pathname);
-  }, [location]);
-  
-  return <>{children}</>;
-};
-
 const App = () => (
   <HelmetProvider>
     <QueryClientProvider client={queryClient}>
@@ -45,27 +31,25 @@ const App = () => (
         <Toaster />
         <Sonner />
         <BrowserRouter>
-          <AnalyticsWrapper>
-            <Routes>
-              <Route path="/" element={<Index />} />
-              <Route path="/ant" element={<Ant />} />
-              <Route path="/alpaca" element={<Alpaca />} />
-              <Route path="/alligator" element={<Alligator />} />
-              <Route path="/ape" element={<Ape />} />
-              <Route path="/bat" element={<Bat />} />
-              <Route path="/bear" element={<Bear />} />
-              <Route path="/bee" element={<Bee />} />
-              <Route path="/beetle" element={<Beetle />} />
-              <Route path="/bird" element={<Bird />} />
-              <Route path="/butterfly" element={<Butterfly />} />
-              <Route path="/capybara" element={<Capybara />} />
-              <Route path="/cat" element={<Cat />} />
-              <Route path="/chicken" element={<Chicken />} />
-              <Route path="/chameleon" element={<Chameleon />} />
-              <Route path="/chipmunk" element={<Chipmunk />} />
-              <Route path="*" element={<NotFound />} />
-            </Routes>
-          </AnalyticsWrapper>
+          <Routes>
+            <Route path="/" element={<Index />} />
+            <Route path="/ant" element={<Ant />} />
+            <Route path="/alpaca" element={<Alpaca />} />
+            <Route path="/alligator" element={<Alligator />} />
+            <Route path="/ape" element={<Ape />} />
+            <Route path="/bat" element={<Bat />} />
+            <Route path="/bear" element={<Bear />} />
+            <Route path="/bee" element={<Bee />} />
+            <Route path="/beetle" element={<Beetle />} />
+            <Route path="/bird" element={<Bird />} />
+            <Route path="/butterfly" element={<Butterfly />} />
+            <Route path="/capybara" element={<Capybara />} />
+            <Route path="/cat" element={<Cat />} />
+            <Route path="/chicken" element={<Chicken />} />
+            <Route path="/chameleon" element={<Chameleon />} />
+            <Route path="/chipmunk" element={<Chipmunk />} />
+            <Route path="*" element={<NotFound />} />
+          </Routes>
         </BrowserRouter>
       </TooltipProvider>
     </QueryClientProvider>
