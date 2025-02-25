@@ -5,7 +5,7 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
 import { HelmetProvider } from "react-helmet-async";
 import { useEffect } from "react";
-import { initializeGA, trackPageView } from "./utils/analytics";
+import { trackPageView } from "./utils/analytics";
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 import Ant from "./pages/Ant";
@@ -29,11 +29,6 @@ const queryClient = new QueryClient();
 // Analytics wrapper component to track page views
 const AnalyticsWrapper = ({ children }: { children: React.ReactNode }) => {
   const location = useLocation();
-  
-  useEffect(() => {
-    // Initialize Google Analytics on first render
-    initializeGA();
-  }, []);
   
   useEffect(() => {
     // Track page view when location changes
