@@ -12,6 +12,11 @@ import catNames from './cat_names.json';
 import chickenNames from './chicken_names.json';
 import chameleonNames from './chameleon_names.json';
 import chipmunkNames from './chipmunk_names.json';
+import cheetahNames from './cheetah_names.json';
+import cowNames from './cow_names.json';
+import crabNames from './crab_names.json';
+import cricketNames from './cricket_names.json';
+import crocodileNames from './crocodile_names.json';
 
 // Helper function to get random names from an array
 function getRandomNames(names: string[], count: number): string[] {
@@ -838,6 +843,261 @@ export const animalData: Record<string, AnimalData> = {
       ],
       male: getRandomNames(chipmunkNames.names.male, 30),
       female: getRandomNames(chipmunkNames.names.female, 30)
+    }
+  },
+  cheetah: {
+    facts: [
+      "Cheetahs are the fastest land animals, capable of reaching speeds up to 70 mph (113 km/h)",
+      "A cheetah can accelerate from 0 to 60 mph in just three seconds",
+      "Cheetahs have semi-retractable claws that help with traction during high-speed chases",
+      "They have distinctive black tear marks running from their eyes to their mouth that help reduce glare from the sun",
+      "Cheetahs can maintain their top speed for only about 20-30 seconds before overheating",
+      "Unlike other big cats, cheetahs cannot roar but instead make chirping and purring sounds",
+      "Female cheetahs are solitary, while males often form small groups called coalitions"
+    ],
+    names: {
+      descriptive: [
+        "Swift Runner",
+        "Spotted Sprinter",
+        "Savannah Racer",
+        "Dash Master",
+        "Speed Hunter",
+        "Velocity King",
+        "Nimble Tracker",
+        "Rapid Chaser",
+        "Blur Stalker",
+        "Lightning Paws"
+      ],
+      funny: [
+        "Speedy Spotty",
+        "Zoom Zoom",
+        "Sir Runs-a-lot",
+        "Captain Quickpaws",
+        "Turbo Kitty",
+        "Dash Dottington",
+        "Professor Fastfeet",
+        "The Flash Cat",
+        "Rocket Whiskers",
+        "Bolt Furry"
+      ],
+      cute: [
+        "Spotty",
+        "Dash",
+        "Zippy",
+        "Dotty",
+        "Sprint",
+        "Blitz",
+        "Speedy",
+        "Flicker",
+        "Bolt",
+        "Zoom"
+      ],
+      male: getRandomNames(cheetahNames.names.male, 30),
+      female: getRandomNames(cheetahNames.names.female, 30)
+    }
+  },
+  cow: {
+    facts: [
+      "Cows have an excellent sense of smell and can detect odors up to 5 miles away",
+      "A cow's stomach has four compartments to help digest tough plant materials",
+      "Cows can produce up to 200,000 glasses of milk in their lifetime",
+      "They have almost 360-degree panoramic vision but struggle to see directly in front of them",
+      "Cows form close friendships and can become stressed when separated from their friends",
+      "They can recognize over 100 other cows and remember them for years",
+      "Cows spend about 8 hours each day eating and 8 hours chewing cud"
+    ],
+    names: {
+      descriptive: [
+        "Meadow Grazer",
+        "Gentle Giant",
+        "Pasture Queen",
+        "Field Wanderer",
+        "Dairy Duchess",
+        "Grass Muncher",
+        "Farm Guardian",
+        "Spotted Sage",
+        "Peaceful Grazer",
+        "Milk Maiden"
+      ],
+      funny: [
+        "Sir Moo-a-lot",
+        "Lady Milksalot",
+        "Count Cud",
+        "Duchess of Dairy",
+        "Baron von Beef",
+        "Professor Pasture",
+        "Captain Cowbell",
+        "Madame Mooington",
+        "Lord Legen-dairy",
+        "Queen Udderly"
+      ],
+      cute: [
+        "Moo Moo",
+        "Daisy",
+        "Buttercup",
+        "Clover",
+        "Patches",
+        "Spot",
+        "Milky",
+        "Cream",
+        "Blossom",
+        "Bella"
+      ],
+      male: getRandomNames(cowNames.names.male, 30),
+      female: getRandomNames(cowNames.names.female, 30)
+    }
+  },
+  crab: {
+    facts: [
+      "Crabs can walk in any direction, but usually move sideways",
+      "They can regenerate lost limbs during the molting process",
+      "There are over 4,500 species of crabs found worldwide",
+      "Some crabs can live up to 100 years",
+      "Crabs breathe through gills located under their carapace",
+      "They communicate by waving their claws and creating sounds",
+      "Crabs are omnivores and will eat almost anything they can find"
+    ],
+    names: {
+      descriptive: [
+        "Shell Defender",
+        "Tide Walker",
+        "Sand Scuttler",
+        "Claw Master",
+        "Shore Wanderer",
+        "Wave Dancer",
+        "Reef Guardian",
+        "Ocean Crawler",
+        "Pincer Warrior",
+        "Beach Patroller"
+      ],
+      funny: [
+        "Sir Pinch-a-lot",
+        "Captain Claw",
+        "Lord Sideways",
+        "Duke of Scuttle",
+        "Professor Shell",
+        "Doctor Snapper",
+        "Baron von Bubble",
+        "Count Carapace",
+        "King Krusty",
+        "Lady Claw-dia"
+      ],
+      cute: [
+        "Pinchy",
+        "Snappy",
+        "Bubbles",
+        "Shell",
+        "Sandy",
+        "Scuttle",
+        "Claws",
+        "Pebble",
+        "Shelly",
+        "Crabby"
+      ],
+      male: getRandomNames(crabNames.names.male, 30),
+      female: getRandomNames(crabNames.names.female, 30)
+    }
+  },
+  cricket: {
+    facts: [
+      "Only male crickets chirp, using their wings to create the sound",
+      "Crickets hear through organs located on their front legs",
+      "The frequency of a cricket's chirp is related to the temperature",
+      "Crickets can jump up to 30 times their body length",
+      "They are omnivores, eating plants, insects, and even fabric",
+      "Crickets have been kept as pets for over 2,000 years in some cultures",
+      "A cricket's age can be estimated by counting the number of molts it has undergone"
+    ],
+    names: {
+      descriptive: [
+        "Night Singer",
+        "Meadow Chirper",
+        "Grass Hopper",
+        "Twilight Musician",
+        "Field Serenader",
+        "Dusk Performer",
+        "Garden Minstrel",
+        "Summer Songster",
+        "Evening Virtuoso",
+        "Leaf Jumper"
+      ],
+      funny: [
+        "Sir Chirps-a-lot",
+        "Captain Clickety",
+        "Lord Leap-a-lot",
+        "Duke of Dusk",
+        "Professor Ping",
+        "Doctor Decibel",
+        "Baron von Bounce",
+        "Count Chirpula",
+        "King Kricket",
+        "Lady Leg-springs"
+      ],
+      cute: [
+        "Chirpy",
+        "Hoppy",
+        "Cricket",
+        "Jiminy",
+        "Ping",
+        "Melody",
+        "Jumper",
+        "Squeaky",
+        "Twinkle",
+        "Harmony"
+      ],
+      male: getRandomNames(cricketNames.names.male, 30),
+      female: getRandomNames(cricketNames.names.female, 30)
+    }
+  },
+  crocodile: {
+    facts: [
+      "Crocodiles have existed for about 200 million years, surviving the extinction of dinosaurs",
+      "They can go through 4,000 teeth in their lifetime as new ones continuously replace old ones",
+      "Crocodiles can hold their breath underwater for up to 2 hours when resting",
+      "They can run on land at speeds up to 11 mph (17 km/h) for short distances",
+      "A crocodile's bite force is among the strongest of any animal, up to 3,700 pounds per square inch",
+      "They can live up to 70-100 years in the wild",
+      "Crocodiles are social animals and can use tools for hunting"
+    ],
+    names: {
+      descriptive: [
+        "River King",
+        "Swamp Ruler",
+        "Ancient Guardian",
+        "Scale Master",
+        "Water Hunter",
+        "Marsh Sovereign",
+        "Tooth Titan",
+        "Delta Watcher",
+        "Armored Predator",
+        "Bank Stalker"
+      ],
+      funny: [
+        "Sir Snaps-a-lot",
+        "Captain Crunch",
+        "Lord Leatherskin",
+        "Duke of Dentures",
+        "Professor Plunge",
+        "Doctor Deathroll",
+        "Baron von Bite",
+        "Count Chomp",
+        "King Kroc",
+        "Lady Jaws"
+      ],
+      cute: [
+        "Snappy",
+        "Chompy",
+        "Scales",
+        "Toothy",
+        "Swampy",
+        "Ripple",
+        "Gator",
+        "Croc",
+        "Bitey",
+        "Marsh"
+      ],
+      male: getRandomNames(crocodileNames.names.male, 30),
+      female: getRandomNames(crocodileNames.names.female, 30)
     }
   }
 };

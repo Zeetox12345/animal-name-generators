@@ -14,6 +14,11 @@ import catNames from './cat_names.json';
 import chickenNames from './chicken_names.json';
 import chameleonNames from './chameleon_names.json';
 import chipmunkNames from './chipmunk_names.json';
+import cheetahNames from './cheetah_names.json';
+import cowNames from './cow_names.json';
+import crabNames from './crab_names.json';
+import cricketNames from './cricket_names.json';
+import crocodileNames from './crocodile_names.json';
 
 // Map to store all loaded name generators
 const nameGenerators: Record<string, AnimalNames> = {
@@ -32,6 +37,11 @@ const nameGenerators: Record<string, AnimalNames> = {
   chicken: chickenNames as AnimalNames,
   chameleon: chameleonNames as AnimalNames,
   chipmunk: chipmunkNames as AnimalNames,
+  cheetah: cheetahNames as AnimalNames,
+  cow: cowNames as AnimalNames,
+  crab: crabNames as AnimalNames,
+  cricket: cricketNames as AnimalNames,
+  crocodile: crocodileNames as AnimalNames,
 };
 
 /**
