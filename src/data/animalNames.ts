@@ -17,6 +17,11 @@ import cowNames from './cow_names.json';
 import crabNames from './crab_names.json';
 import cricketNames from './cricket_names.json';
 import crocodileNames from './crocodile_names.json';
+import deerNames from './deer_names.json';
+import dogNames from './dog_names.json';
+import dolphinNames from './dolphin_names.json';
+import donkeyNames from './donkey_names.json';
+import duckNames from './duck_names.json';
 
 // Helper function to get random names from an array
 function getRandomNames(names: string[], count: number): string[] {
@@ -1098,6 +1103,261 @@ export const animalData: Record<string, AnimalData> = {
       ],
       male: getRandomNames(crocodileNames.names.male, 30),
       female: getRandomNames(crocodileNames.names.female, 30)
+    }
+  },
+  deer: {
+    facts: [
+      "Deer can jump up to 10 feet high and 30 feet in length",
+      "A deer's sense of smell is 1,000 times more sensitive than a human's",
+      "Male deer (bucks) grow and shed their antlers annually",
+      "Deer are excellent swimmers and can swim up to 15 mph",
+      "They can rotate their ears 180 degrees to detect sounds from all directions",
+      "A deer's heart rate can range from 40 to 200 beats per minute",
+      "Deer have been known to form bonds with other species, including humans"
+    ],
+    names: {
+      descriptive: [
+        "Forest Wanderer",
+        "Swift Runner",
+        "Meadow Grazer",
+        "Antler Crown",
+        "Woodland Prince",
+        "Dawn Leaper",
+        "Silent Stepper",
+        "Dusk Watcher",
+        "Velvet Antler",
+        "Grove Guardian"
+      ],
+      funny: [
+        "Sir Prongs-a-lot",
+        "Captain Hoofbeat",
+        "Lord Leapington",
+        "Duke of Deerfield",
+        "Professor Prance",
+        "Doctor Deerlight",
+        "Baron von Buck",
+        "Count Antlers",
+        "King Bambi",
+        "Lady Doe-eyes"
+      ],
+      cute: [
+        "Bambi",
+        "Spots",
+        "Fawn",
+        "Thumper",
+        "Bucky",
+        "Willow",
+        "Maple",
+        "Clover",
+        "Hazel",
+        "Autumn"
+      ],
+      male: getRandomNames(deerNames.names.male, 30),
+      female: getRandomNames(deerNames.names.female, 30)
+    }
+  },
+  dog: {
+    facts: [
+      "Dogs have a sense of smell that is up to 100,000 times stronger than humans",
+      "A dog's nose print is unique, similar to a human's fingerprint",
+      "Dogs can hear sounds at four times the distance humans can",
+      "The average dog can learn about 165 words",
+      "Dogs dream just like humans, and puppies and senior dogs dream more frequently",
+      "A dog's normal body temperature is between 101 and 102.5 degrees Fahrenheit",
+      "Dogs have three eyelids, including one specifically for protection and lubrication"
+    ],
+    names: {
+      descriptive: [
+        "Loyal Companion",
+        "Faithful Guardian",
+        "Brave Protector",
+        "Swift Runner",
+        "Keen Tracker",
+        "Gentle Friend",
+        "Noble Canine",
+        "Playful Spirit",
+        "Devoted Watcher",
+        "Steadfast Ally"
+      ],
+      funny: [
+        "Sir Barks-a-lot",
+        "Captain Woofington",
+        "Lord Waggington",
+        "Duke of Dogville",
+        "Professor Paws",
+        "Doctor Droolittle",
+        "Baron von Bark",
+        "Count Canine",
+        "King Kibble",
+        "Lady Licks-a-lot"
+      ],
+      cute: [
+        "Buddy",
+        "Max",
+        "Bella",
+        "Luna",
+        "Charlie",
+        "Cooper",
+        "Daisy",
+        "Bailey",
+        "Sadie",
+        "Milo"
+      ],
+      male: getRandomNames(dogNames.names.male, 30),
+      female: getRandomNames(dogNames.names.female, 30)
+    }
+  },
+  dolphin: {
+    facts: [
+      "Dolphins sleep with one eye open and only half their brain at a time",
+      "They can recognize themselves in mirrors, showing self-awareness",
+      "Dolphins have unique whistles that serve as names for individual identification",
+      "They can swim at speeds of up to 25 mph (40 km/h)",
+      "Dolphins have excellent eyesight both in and out of water",
+      "They are among the few animals that use tools, using sponges to protect their snouts while foraging",
+      "Dolphins have been known to help humans and other animals in distress"
+    ],
+    names: {
+      descriptive: [
+        "Wave Dancer",
+        "Ocean Glider",
+        "Tide Rider",
+        "Sea Acrobat",
+        "Reef Explorer",
+        "Current Surfer",
+        "Deep Diver",
+        "Echo Caller",
+        "Blue Voyager",
+        "Splash Jumper"
+      ],
+      funny: [
+        "Sir Splashes-a-lot",
+        "Captain Clickington",
+        "Lord Leapington",
+        "Duke of Deepwater",
+        "Professor Porpoise",
+        "Doctor Dive",
+        "Baron von Bubble",
+        "Count Cetacean",
+        "King Flipper",
+        "Lady Leap"
+      ],
+      cute: [
+        "Finn",
+        "Splash",
+        "Echo",
+        "Bubbles",
+        "Wave",
+        "Flipper",
+        "Sunny",
+        "Blue",
+        "Pearl",
+        "Coral"
+      ],
+      male: getRandomNames(dolphinNames.names.male, 30),
+      female: getRandomNames(dolphinNames.names.female, 30)
+    }
+  },
+  donkey: {
+    facts: [
+      "Donkeys have an excellent memory and can recognize areas and other donkeys from 25 years ago",
+      "Their large ears help them hear desert predators from up to 60 miles away",
+      "Donkeys can live up to 50 years with proper care",
+      "They are highly intelligent and can learn tasks quickly",
+      "Donkeys are social animals that form strong bonds with companions",
+      "They have a reputation for stubbornness, but this is actually careful consideration before acting",
+      "Donkeys have a different braying sound than horses, making a 'hee-haw' noise"
+    ],
+    names: {
+      descriptive: [
+        "Steadfast Worker",
+        "Patient Carrier",
+        "Wise Companion",
+        "Desert Traveler",
+        "Mountain Climber",
+        "Loyal Helper",
+        "Strong Hauler",
+        "Gentle Guardian",
+        "Farm Companion",
+        "Trail Guide"
+      ],
+      funny: [
+        "Sir Brays-a-lot",
+        "Captain Hee-Haw",
+        "Lord Long-ears",
+        "Duke of Donkeyville",
+        "Professor Plod",
+        "Doctor Determined",
+        "Baron von Bray",
+        "Count Carrot",
+        "King Kick",
+        "Lady Longears"
+      ],
+      cute: [
+        "Eeyore",
+        "Burrito",
+        "Dusty",
+        "Clover",
+        "Daisy",
+        "Pepper",
+        "Pebbles",
+        "Smokey",
+        "Rusty",
+        "Patches"
+      ],
+      male: getRandomNames(donkeyNames.names.male, 30),
+      female: getRandomNames(donkeyNames.names.female, 30)
+    }
+  },
+  duck: {
+    facts: [
+      "Ducks have waterproof feathers due to an oil produced by a gland near their tail",
+      "They can sleep with one eye open and half their brain awake to watch for predators",
+      "A duck's quack doesn't echo, and no one knows why",
+      "Ducks can dive up to 10 feet deep in water",
+      "They have excellent vision and can see in color",
+      "Ducklings can swim as soon as they hatch",
+      "Ducks have three eyelids to protect their eyes while swimming"
+    ],
+    names: {
+      descriptive: [
+        "Pond Glider",
+        "Water Wanderer",
+        "Feather Floater",
+        "Lake Swimmer",
+        "Marsh Explorer",
+        "Reed Wader",
+        "Quack Caller",
+        "Wing Flapper",
+        "Ripple Maker",
+        "Puddle Splasher"
+      ],
+      funny: [
+        "Sir Quacks-a-lot",
+        "Captain Waddlesworth",
+        "Lord Featherbottom",
+        "Duke of Duckpond",
+        "Professor Paddle",
+        "Doctor Dabbleton",
+        "Baron von Bill",
+        "Count Quackula",
+        "King Webfoot",
+        "Lady Waddle"
+      ],
+      cute: [
+        "Quackers",
+        "Waddles",
+        "Puddles",
+        "Ducky",
+        "Splash",
+        "Pebble",
+        "Fluffy",
+        "Bubbles",
+        "Daffy",
+        "Sunny"
+      ],
+      male: getRandomNames(duckNames.names.male, 30),
+      female: getRandomNames(duckNames.names.female, 30)
     }
   }
 };

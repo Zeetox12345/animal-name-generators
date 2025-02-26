@@ -121,6 +121,36 @@ const animals = [
     path: "/crocodile",
     description: "Find powerful names for these ancient reptiles.",
     image: "/lovable-uploads/crocodile.png"
+  },
+  {
+    name: "Deer",
+    path: "/deer",
+    description: "Generate graceful names for these elegant woodland creatures.",
+    image: "/lovable-uploads/deer.png"
+  },
+  {
+    name: "Dog",
+    path: "/dog",
+    description: "Find the perfect name for your loyal canine companion.",
+    image: "/lovable-uploads/dog.png"
+  },
+  {
+    name: "Dolphin",
+    path: "/dolphin",
+    description: "Create playful names for these intelligent marine mammals.",
+    image: "/lovable-uploads/dolphin.png"
+  },
+  {
+    name: "Donkey",
+    path: "/donkey",
+    description: "Discover charming names for these hardworking farm animals.",
+    image: "/lovable-uploads/donkey.png"
+  },
+  {
+    name: "Duck",
+    path: "/duck",
+    description: "Generate quack-tastic names for these delightful waterfowl.",
+    image: "/lovable-uploads/duck.png"
   }
 ];
 

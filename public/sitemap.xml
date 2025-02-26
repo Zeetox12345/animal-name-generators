@@ -126,4 +126,34 @@
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
+  <url>
+    <loc>https://animalnamegenerators.com/deer</loc>
+    <lastmod>2024-02-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://animalnamegenerators.com/dog</loc>
+    <lastmod>2024-02-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://animalnamegenerators.com/dolphin</loc>
+    <lastmod>2024-02-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://animalnamegenerators.com/donkey</loc>
+    <lastmod>2024-02-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://animalnamegenerators.com/duck</loc>
+    <lastmod>2024-02-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
 </urlset> 
