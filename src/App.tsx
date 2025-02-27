@@ -31,6 +31,11 @@ import Dog from "./pages/Dog";
 import Dolphin from "./pages/Dolphin";
 import Donkey from "./pages/Donkey";
 import Duck from "./pages/Duck";
+import Eagle from "./pages/Eagle";
+import Elephant from "./pages/Elephant";
+import Ferret from "./pages/Ferret";
+import Fish from "./pages/Fish";
+import Flamingo from "./pages/Flamingo";
 
 const queryClient = new QueryClient();
 
@@ -68,6 +73,11 @@ const App = () => (
             <Route path="/dolphin" element={<Dolphin />} />
             <Route path="/donkey" element={<Donkey />} />
             <Route path="/duck" element={<Duck />} />
+            <Route path="/eagle" element={<Eagle />} />
+            <Route path="/elephant" element={<Elephant />} />
+            <Route path="/ferret" element={<Ferret />} />
+            <Route path="/fish" element={<Fish />} />
+            <Route path="/flamingo" element={<Flamingo />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </BrowserRouter>

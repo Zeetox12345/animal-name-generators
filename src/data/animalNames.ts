@@ -2,6 +2,7 @@ import antNames from './ant_names.json';
 import alpacaNames from './alpaca_names.json';
 import alligatorNames from './alligator_names.json';
 import apeNames from './ape_names.json';
+import batNames from './bat_names.json';
 import bearNames from './bear_names.json';
 import beeNames from './bee_names.json';
 import beetleNames from './beetle_names.json';
@@ -22,6 +23,11 @@ import dogNames from './dog_names.json';
 import dolphinNames from './dolphin_names.json';
 import donkeyNames from './donkey_names.json';
 import duckNames from './duck_names.json';
+import eagleNames from './eagle_names.json';
+import elephantNames from './elephant_names.json';
+import ferretNames from './ferret_names.json';
+import fishNames from './fish_names.json';
+import flamingoNames from './flamingo_names.json';
 
 // Helper function to get random names from an array
 function getRandomNames(names: string[], count: number): string[] {
@@ -1312,52 +1318,307 @@ export const animalData: Record<string, AnimalData> = {
   duck: {
     facts: [
       "Ducks have waterproof feathers due to an oil produced by a gland near their tail",
-      "They can sleep with one eye open and half their brain awake to watch for predators",
+      "They can sleep with one eye open to watch for predators",
       "A duck's quack doesn't echo, and no one knows why",
-      "Ducks can dive up to 10 feet deep in water",
-      "They have excellent vision and can see in color",
-      "Ducklings can swim as soon as they hatch",
+      "Some duck species can fly as high as 21,000 feet",
+      "Ducks have excellent vision and can see in color",
+      "Baby ducks communicate with their mothers while still in the egg",
       "Ducks have three eyelids to protect their eyes while swimming"
     ],
     names: {
       descriptive: [
-        "Pond Glider",
-        "Water Wanderer",
-        "Feather Floater",
-        "Lake Swimmer",
-        "Marsh Explorer",
-        "Reed Wader",
-        "Quack Caller",
-        "Wing Flapper",
-        "Ripple Maker",
-        "Puddle Splasher"
+        "Webfoot the Swimmer",
+        "Quacker the Loud",
+        "Paddler the Swift",
+        "Feather the Waterproof",
+        "Waddler the Cute",
+        "Diver the Deep",
+        "Splasher the Playful",
+        "Floater the Buoyant",
+        "Migrator the Traveler",
+        "Dabbler the Forager"
       ],
       funny: [
         "Sir Quacks-a-lot",
-        "Captain Waddlesworth",
-        "Lord Featherbottom",
-        "Duke of Duckpond",
-        "Professor Paddle",
-        "Doctor Dabbleton",
-        "Baron von Bill",
-        "Count Quackula",
-        "King Webfoot",
-        "Lady Waddle"
+        "Waddle McFluff",
+        "Bill Nye the Duck Guy",
+        "Quackers & Cheese",
+        "Bread Winner",
+        "Duck Norris",
+        "Quack Sparrow",
+        "Aflac",
+        "Howard the Duck",
+        "Ducktective"
       ],
       cute: [
-        "Quackers",
-        "Waddles",
         "Puddles",
+        "Waddles",
+        "Quackers",
         "Ducky",
-        "Splash",
-        "Pebble",
-        "Fluffy",
         "Bubbles",
-        "Daffy",
-        "Sunny"
+        "Pebbles",
+        "Splash",
+        "Fluffy",
+        "Sunny",
+        "Daisy"
       ],
       male: getRandomNames(duckNames.names.male, 30),
       female: getRandomNames(duckNames.names.female, 30)
+    }
+  },
+  eagle: {
+    facts: [
+      "Eagles have incredible eyesight and can spot prey from up to 2 miles away",
+      "Bald eagles can fly at speeds of up to 100 mph when diving",
+      "Eagles build the largest nests of any bird, some weighing up to 2 tons",
+      "Eagles mate for life and can live up to 30 years in the wild",
+      "An eagle's grip is about 10 times stronger than a human's hand",
+      "Eagles have been a symbol of power and freedom for thousands of years",
+      "Young eagles learn to fly at about 12 weeks of age"
+    ],
+    names: {
+      descriptive: [
+        "Soarer the Majestic",
+        "Talon the Sharp",
+        "Hunter the Keen-eyed",
+        "Apex the Predator",
+        "Skyward the High-flyer",
+        "Wingspan the Mighty",
+        "Raptor the Swift",
+        "Eyrie the Nest-builder",
+        "Freedom the Symbol",
+        "Sovereign the Regal"
+      ],
+      funny: [
+        "Steven Seagull",
+        "Amelia Airhart",
+        "Feather Locklear",
+        "Beakie Blinders",
+        "Talon Show",
+        "Sir Swoops-a-lot",
+        "Hawkward",
+        "Wingman",
+        "Bald Eagle (with Hair)",
+        "Freedom Fries"
+      ],
+      cute: [
+        "Scout",
+        "Skye",
+        "Sunny",
+        "Ace",
+        "Soar",
+        "Dash",
+        "Feather",
+        "Breeze",
+        "Glide",
+        "Talon"
+      ],
+      male: getRandomNames(eagleNames.names.male, 30),
+      female: getRandomNames(eagleNames.names.female, 30)
+    }
+  },
+  elephant: {
+    facts: [
+      "Elephants are the largest land animals on Earth",
+      "An elephant's trunk has over 40,000 muscles and can lift up to 700 pounds",
+      "Elephants communicate through vibrations felt through their feet",
+      "Elephants have the longest pregnancy of any mammal - 22 months",
+      "Elephants can recognize themselves in mirrors, showing self-awareness",
+      "Elephants mourn their dead and have been observed visiting the bones of deceased family members",
+      "An elephant's memory is legendary - they can remember routes to water sources decades later"
+    ],
+    names: {
+      descriptive: [
+        "Tusker the Mighty",
+        "Trunk the Flexible",
+        "Mammoth the Enormous",
+        "Gentle the Giant",
+        "Memory the Wise",
+        "Stomper the Ground-shaker",
+        "Trumpet the Loud",
+        "Matriarch the Leader",
+        "Ivory the Majestic",
+        "Colossal the Impressive"
+      ],
+      funny: [
+        "Trunk Sinatra",
+        "Dumbo Jumbo",
+        "Tusk Manager",
+        "Ele-fantastic",
+        "Sir Stomps-a-lot",
+        "Pachyderm Pete",
+        "Ears Truly",
+        "Snout & About",
+        "Trunk in the Junk",
+        "Big Foot"
+      ],
+      cute: [
+        "Peanut",
+        "Bubbles",
+        "Trunks",
+        "Stompy",
+        "Ellie",
+        "Tusker",
+        "Jumbo",
+        "Trumpet",
+        "Dumbo",
+        "Nelly"
+      ],
+      male: getRandomNames(elephantNames.names.male, 30),
+      female: getRandomNames(elephantNames.names.female, 30)
+    }
+  },
+  ferret: {
+    facts: [
+      "Ferrets sleep for 14-18 hours a day",
+      "A group of ferrets is called a 'business'",
+      "Ferrets have been domesticated for over 2,500 years",
+      "Ferrets can squeeze through holes as small as 1 inch in diameter",
+      "Ferrets have a natural musky odor from scent glands",
+      "Ferrets are carnivores and require a high-protein diet",
+      "Ferrets can't see very well but have excellent senses of smell and hearing"
+    ],
+    names: {
+      descriptive: [
+        "Slinky the Flexible",
+        "Bandit the Masked",
+        "Weasel the Quick",
+        "Thief the Sneaky",
+        "Noodle the Long",
+        "Bouncer the Playful",
+        "Sleeper the Drowsy",
+        "Hunter the Keen",
+        "Digger the Curious",
+        "Dancer the Agile"
+      ],
+      funny: [
+        "Fur-ocious",
+        "Carpet Shark",
+        "Tube Sock",
+        "Noodle Napper",
+        "Sir Steals-a-lot",
+        "Sock Thief",
+        "Furret Bueller",
+        "Weaselly Snipes",
+        "Ferret Fawcett",
+        "Tunnel Vision"
+      ],
+      cute: [
+        "Noodle",
+        "Bandit",
+        "Slinky",
+        "Mischief",
+        "Peanut",
+        "Rascal",
+        "Nibbles",
+        "Whiskers",
+        "Weasel",
+        "Snickers"
+      ],
+      male: getRandomNames(ferretNames.names.male, 30),
+      female: getRandomNames(ferretNames.names.female, 30)
+    }
+  },
+  fish: {
+    facts: [
+      "There are over 34,000 known species of fish",
+      "Fish were the first vertebrates to evolve on Earth",
+      "Some fish can change their sex during their lifetime",
+      "Fish have specialized organs called lateral lines that detect water pressure changes",
+      "The fastest fish is the sailfish, which can swim up to 68 mph",
+      "Some fish, like the lungfish, can breathe air and survive out of water for years",
+      "Fish have taste buds all over their body, not just in their mouth"
+    ],
+    names: {
+      descriptive: [
+        "Swimmer the Swift",
+        "Scales the Shiny",
+        "Bubbles the Breather",
+        "Fin the Graceful",
+        "Diver the Deep",
+        "Gills the Efficient",
+        "Shimmer the Colorful",
+        "Splasher the Playful",
+        "Aqua the Fluid",
+        "Glider the Smooth"
+      ],
+      funny: [
+        "Sir Swims-a-lot",
+        "Swim Shady",
+        "Gill Gates",
+        "Cod Stewart",
+        "Salmon Rushdie",
+        "Marlin Monroe",
+        "Fin Diesel",
+        "School of Rock",
+        "Fishstick",
+        "Scales & Tales"
+      ],
+      cute: [
+        "Bubbles",
+        "Finley",
+        "Splash",
+        "Gilly",
+        "Nemo",
+        "Flipper",
+        "Scales",
+        "Shimmer",
+        "Goldie",
+        "Finn"
+      ],
+      male: getRandomNames(fishNames.names.male, 30),
+      female: getRandomNames(fishNames.names.female, 30)
+    }
+  },
+  flamingo: {
+    facts: [
+      "Flamingos get their pink color from the food they eat, which contains carotenoid pigments",
+      "Flamingos can stand on one leg for hours without getting tired",
+      "A group of flamingos is called a 'flamboyance'",
+      "Flamingos can filter feed with their heads upside down in the water",
+      "Baby flamingos are born with gray feathers that gradually turn pink",
+      "Flamingos can live up to 50 years in the wild",
+      "Flamingos mate for life and raise one chick at a time"
+    ],
+    names: {
+      descriptive: [
+        "Pinky the Vibrant",
+        "Leggy the Tall",
+        "Wader the Graceful",
+        "Flamboyant the Showy",
+        "Balancer the One-legged",
+        "Feather the Fluffy",
+        "Coral the Pink",
+        "Elegant the Poised",
+        "Tropical the Exotic",
+        "Lagoon the Wader"
+      ],
+      funny: [
+        "Flamingo Starr",
+        "Pink Floyd",
+        "Legs for Days",
+        "Sir Stands-a-lot",
+        "Shrimp Cocktail",
+        "Pinky Promise",
+        "Lawn Ornament",
+        "Flamin-go Getter",
+        "Pretty in Pink",
+        "Awkward Dancer"
+      ],
+      cute: [
+        "Pinky",
+        "Rosie",
+        "Coral",
+        "Blush",
+        "Flammy",
+        "Poppy",
+        "Petal",
+        "Rosy",
+        "Fluff",
+        "Taffy"
+      ],
+      male: getRandomNames(flamingoNames.names.male, 30),
+      female: getRandomNames(flamingoNames.names.female, 30)
     }
   }
 };

@@ -24,6 +24,11 @@ import dogNames from './dog_names.json';
 import dolphinNames from './dolphin_names.json';
 import donkeyNames from './donkey_names.json';
 import duckNames from './duck_names.json';
+import eagleNames from './eagle_names.json';
+import elephantNames from './elephant_names.json';
+import ferretNames from './ferret_names.json';
+import fishNames from './fish_names.json';
+import flamingoNames from './flamingo_names.json';
 
 // Map to store all loaded name generators
 const nameGenerators: Record<string, AnimalNames> = {
@@ -52,6 +57,11 @@ const nameGenerators: Record<string, AnimalNames> = {
   dolphin: dolphinNames as AnimalNames,
   donkey: donkeyNames as AnimalNames,
   duck: duckNames as AnimalNames,
+  eagle: eagleNames as AnimalNames,
+  elephant: elephantNames as AnimalNames,
+  ferret: ferretNames as AnimalNames,
+  fish: fishNames as AnimalNames,
+  flamingo: flamingoNames as AnimalNames,
 };
 
 /**
