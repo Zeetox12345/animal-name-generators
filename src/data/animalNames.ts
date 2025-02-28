@@ -28,6 +28,11 @@ import elephantNames from './elephant_names.json';
 import ferretNames from './ferret_names.json';
 import fishNames from './fish_names.json';
 import flamingoNames from './flamingo_names.json';
+import flyNames from './fly_names.json';
+import foxNames from './fox_names.json';
+import frogNames from './frog_names.json';
+import giraffeNames from './giraffe_names.json';
+import goatNames from './goat_names.json';
 
 // Helper function to get random names from an array
 function getRandomNames(names: string[], count: number): string[] {
@@ -1577,6 +1582,261 @@ export const animalData: Record<string, AnimalData> = {
       ],
       male: getRandomNames(flamingoNames.names.male, 30),
       female: getRandomNames(flamingoNames.names.female, 30)
+    }
+  },
+  fly: {
+    facts: [
+      "Flies have only two wings, unlike most other flying insects which have four",
+      "House flies taste with their feet, which have taste receptors",
+      "A fly can react to an approaching swatter in just 100 milliseconds",
+      "Flies can walk upside down on ceilings due to sticky pads on their feet",
+      "Some flies, like fruit flies, are essential for scientific research",
+      "Flies play an important role in decomposition and nutrient recycling",
+      "There are over 120,000 species of flies worldwide"
+    ],
+    names: {
+      descriptive: [
+        "Buzzer the Swift",
+        "Zippy the Quick",
+        "Hover the Agile",
+        "Dart the Nimble",
+        "Whizz the Fast",
+        "Zoom the Speedy",
+        "Flitter the Elusive",
+        "Wing the Graceful",
+        "Soar the High-flyer",
+        "Glide the Smooth"
+      ],
+      funny: [
+        "Sir Buzz-a-lot",
+        "Annoying Andy",
+        "Pesky Pete",
+        "Swat Dodger",
+        "Window Banger",
+        "Fruit Loop",
+        "Buzz Lightyear",
+        "Tiny Terror",
+        "Ninja Fly",
+        "Escape Artist"
+      ],
+      cute: [
+        "Tiny",
+        "Buzzy",
+        "Flutter",
+        "Pepper",
+        "Dot",
+        "Speck",
+        "Zippy",
+        "Whisper",
+        "Flick",
+        "Pixel"
+      ],
+      male: getRandomNames(flyNames.names.male, 30),
+      female: getRandomNames(flyNames.names.female, 30)
+    }
+  },
+  fox: {
+    facts: [
+      "Foxes are members of the dog family Canidae",
+      "A group of foxes is called a 'skulk' or 'leash'",
+      "Foxes have whiskers on their legs and face to help them navigate",
+      "Red foxes are the most widespread carnivore species in the world",
+      "Foxes communicate with over 40 different sounds",
+      "A fox's tail (or 'brush') can help it balance and keep warm in cold weather",
+      "Foxes have excellent hearing and can detect prey underground"
+    ],
+    names: {
+      descriptive: [
+        "Rusty the Red",
+        "Swift the Hunter",
+        "Shadow the Stealthy",
+        "Amber the Clever",
+        "Blaze the Fiery",
+        "Sly the Cunning",
+        "Nimble the Agile",
+        "Wiley the Wise",
+        "Flicker the Quick",
+        "Ember the Bright"
+      ],
+      funny: [
+        "Sir Pounce-a-lot",
+        "Chicken Chaser",
+        "Bushy Tail",
+        "Sneaky Pete",
+        "Fantastic Mr.",
+        "Socks",
+        "Bandit",
+        "Trickster",
+        "Firefox",
+        "Foxy McFoxface"
+      ],
+      cute: [
+        "Kit",
+        "Roxy",
+        "Ginger",
+        "Copper",
+        "Rusty",
+        "Amber",
+        "Cinnamon",
+        "Maple",
+        "Autumn",
+        "Pepper"
+      ],
+      male: getRandomNames(foxNames.names.male, 30),
+      female: getRandomNames(foxNames.names.female, 30)
+    }
+  },
+  frog: {
+    facts: [
+      "Frogs don't drink water but absorb it through their skin",
+      "A group of frogs is called an 'army'",
+      "Some frogs can jump over 20 times their body length",
+      "There are over 5,000 species of frogs worldwide",
+      "Frogs completely shed their skin about once a week",
+      "Some frogs can change color depending on light, temperature, or mood",
+      "The glass frog has transparent skin, allowing you to see its internal organs"
+    ],
+    names: {
+      descriptive: [
+        "Leaper the High-jumper",
+        "Croaker the Loud",
+        "Splash the Swimmer",
+        "Pond King",
+        "Hopper the Quick",
+        "Lily the Pad-dweller",
+        "Emerald the Green",
+        "Ribbit the Vocal",
+        "Marsh the Wetland-lover",
+        "Speckle the Spotted"
+      ],
+      funny: [
+        "Sir Hops-a-lot",
+        "Jeremiah",
+        "Kermit",
+        "Toad-ally Awesome",
+        "Frogger",
+        "Prince Charming",
+        "Wart",
+        "Jumpy McJumpface",
+        "Tongue Twister",
+        "Fly Catcher"
+      ],
+      cute: [
+        "Puddles",
+        "Lily",
+        "Pickle",
+        "Hoppy",
+        "Tiny",
+        "Speckles",
+        "Emerald",
+        "Pebble",
+        "Dewdrop",
+        "Sprout"
+      ],
+      male: getRandomNames(frogNames.names.male, 30),
+      female: getRandomNames(frogNames.names.female, 30)
+    }
+  },
+  giraffe: {
+    facts: [
+      "Giraffes are the tallest living animals, with males reaching up to 18 feet",
+      "A giraffe's neck contains only seven vertebrae, the same as humans",
+      "Giraffes have the highest blood pressure of any land animal",
+      "Baby giraffes can stand within 30 minutes of birth and run within 10 hours",
+      "Giraffes sleep for only about 30 minutes to two hours per day",
+      "Each giraffe has a unique pattern of spots, like human fingerprints",
+      "Giraffes have 18-20 inch long tongues that are typically bluish-black in color"
+    ],
+    names: {
+      descriptive: [
+        "Towering Heights",
+        "Skyreacher the Tall",
+        "Patches the Spotted",
+        "Stretch the Long",
+        "Savannah the Graceful",
+        "Horizon the Far-seer",
+        "Lofty the High",
+        "Speckle the Patterned",
+        "Acacia the Leaf-eater",
+        "Gentle Giant"
+      ],
+      funny: [
+        "Shorty",
+        "Neck-olas",
+        "Spots McGee",
+        "High Maintenance",
+        "Cloud Kisser",
+        "Skyscraper",
+        "Stretch Armstrong",
+        "Ceiling Fan Inspector",
+        "Weather Reporter",
+        "Tall Tale"
+      ],
+      cute: [
+        "Patches",
+        "Spots",
+        "Taffy",
+        "Freckles",
+        "Sunny",
+        "Caramel",
+        "Stretch",
+        "Twiggy",
+        "Dotty",
+        "Maple"
+      ],
+      male: getRandomNames(giraffeNames.names.male, 30),
+      female: getRandomNames(giraffeNames.names.female, 30)
+    }
+  },
+  goat: {
+    facts: [
+      "Goats have rectangular pupils that allow them to see 320-340 degrees around them",
+      "Goats were one of the first animals to be domesticated by humans, around 10,000 years ago",
+      "Baby goats (kids) can stand and walk within minutes of being born",
+      "Goats have accents that differ based on their geographic location",
+      "Contrary to popular belief, goats are picky eaters and don't actually eat tin cans",
+      "Goats have excellent balance and can climb trees and even dams",
+      "There are over 300 distinct breeds of goats"
+    ],
+    names: {
+      descriptive: [
+        "Climber the Agile",
+        "Billy the Bold",
+        "Mountain the Sturdy",
+        "Nibbler the Curious",
+        "Rambler the Explorer",
+        "Bearded One",
+        "Horned the Proud",
+        "Bleater the Vocal",
+        "Leaper the Nimble",
+        "Grazer the Hungry"
+      ],
+      funny: [
+        "Sir Bleats-a-lot",
+        "Tin Can",
+        "Lawn Mower",
+        "Billy the Kid",
+        "Goatzilla",
+        "Escape Artist",
+        "Yoga Master",
+        "Beard-o",
+        "Headbutter",
+        "Mountain Dew"
+      ],
+      cute: [
+        "Pebbles",
+        "Buttons",
+        "Clover",
+        "Pepper",
+        "Daisy",
+        "Nibbles",
+        "Peanut",
+        "Oreo",
+        "Cookie",
+        "Sprinkles"
+      ],
+      male: getRandomNames(goatNames.names.male, 30),
+      female: getRandomNames(goatNames.names.female, 30)
     }
   }
 };

@@ -181,6 +181,36 @@ const animals = [
     path: "/flamingo",
     description: "Find vibrant names for these elegant pink birds.",
     image: "/lovable-uploads/flamingo.png"
+  },
+  {
+    name: "Fly",
+    path: "/fly",
+    description: "Generate buzzing names for these swift insects.",
+    image: "/lovable-uploads/fly.png"
+  },
+  {
+    name: "Fox",
+    path: "/fox",
+    description: "Create clever names for these cunning creatures.",
+    image: "/lovable-uploads/fox.png"
+  },
+  {
+    name: "Frog",
+    path: "/frog",
+    description: "Find hoppy names for these amphibious friends.",
+    image: "/lovable-uploads/frog.png"
+  },
+  {
+    name: "Giraffe",
+    path: "/giraffe",
+    description: "Generate tall and elegant names for these gentle giants.",
+    image: "/lovable-uploads/giraffe.png"
+  },
+  {
+    name: "Goat",
+    path: "/goat",
+    description: "Create playful names for these nimble and curious animals.",
+    image: "/lovable-uploads/goat.png"
   }
 ];
 
