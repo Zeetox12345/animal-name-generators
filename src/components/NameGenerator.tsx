@@ -62,7 +62,7 @@ export const NameGenerator = ({
         {/* Header */}
         <section className="text-center mb-8 sm:mb-12">
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-primary mb-3 sm:mb-4">
-            {animal} Name Generator
+            {animal.split(' ').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ')} Name Generator
           </h1>
           <p className="text-lg sm:text-xl text-gray-600">
             Generate the perfect name for your {animal.toLowerCase()}.
@@ -139,7 +139,7 @@ export const NameGenerator = ({
           <h2 className="text-xl sm:text-2xl font-semibold mb-3 sm:mb-4">How it Works</h2>
           <Card className="p-4 sm:p-6">
             <p className="text-sm sm:text-base text-gray-600">
-              Our {animal.toLowerCase()} name generator uses a carefully curated
+              Our {animal} name generator uses a carefully curated
               list of names that are perfect for your pet. Simply choose between
               male and female names, click the generate button, and discover the
               perfect name!
@@ -149,7 +149,9 @@ export const NameGenerator = ({
 
         {/* Animal Information */}
         <section id="animal-info" className="mb-8 sm:mb-12">
-          <h2 className="text-xl sm:text-2xl font-semibold mb-3 sm:mb-4">{animal} Information</h2>
+          <h2 className="text-xl sm:text-2xl font-semibold mb-3 sm:mb-4">
+            {animal.split(' ').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ')} Information
+          </h2>
           <Card className="p-4 sm:p-6">
             <ul className="space-y-2">
               {facts.map((fact, index) => (

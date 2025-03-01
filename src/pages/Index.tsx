@@ -211,6 +211,36 @@ const animals = [
     path: "/goat",
     description: "Create playful names for these nimble and curious animals.",
     image: "/lovable-uploads/goat.png"
+  },
+  {
+    name: "Goose",
+    path: "/goose",
+    description: "Generate majestic names for these elegant waterfowl.",
+    image: "/lovable-uploads/goose.png"
+  },
+  {
+    name: "Guinea Pig",
+    path: "/guinea-pig",
+    description: "Find adorable names for these friendly and social pets.",
+    image: "/lovable-uploads/guinea_pig.png"
+  },
+  {
+    name: "Hamster",
+    path: "/hamster",
+    description: "Create cute names for these popular pocket pets.",
+    image: "/lovable-uploads/hamster.png"
+  },
+  {
+    name: "Hedgehog",
+    path: "/hedgehog",
+    description: "Discover spiky names for these adorable nocturnal creatures.",
+    image: "/lovable-uploads/hedgehog.png"
+  },
+  {
+    name: "Hermit Crab",
+    path: "/hermit-crab",
+    description: "Generate unique names for these shell-dwelling creatures.",
+    image: "/lovable-uploads/hermit_crab.png"
   }
 ];
 

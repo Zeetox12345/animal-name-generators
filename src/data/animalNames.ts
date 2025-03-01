@@ -33,6 +33,11 @@ import foxNames from './fox_names.json';
 import frogNames from './frog_names.json';
 import giraffeNames from './giraffe_names.json';
 import goatNames from './goat_names.json';
+import gooseNames from './goose_names.json';
+import guineaPigNames from './guinea_pig_names.json';
+import hamsterNames from './hamster_names.json';
+import hedgehogNames from './hedgehog_names.json';
+import hermitCrabNames from './hermit_crab_names.json';
 
 // Helper function to get random names from an array
 function getRandomNames(names: string[], count: number): string[] {
@@ -1790,53 +1795,308 @@ export const animalData: Record<string, AnimalData> = {
   },
   goat: {
     facts: [
-      "Goats have rectangular pupils that allow them to see 320-340 degrees around them",
       "Goats were one of the first animals to be domesticated by humans, around 10,000 years ago",
-      "Baby goats (kids) can stand and walk within minutes of being born",
-      "Goats have accents that differ based on their geographic location",
-      "Contrary to popular belief, goats are picky eaters and don't actually eat tin cans",
-      "Goats have excellent balance and can climb trees and even dams",
-      "There are over 300 distinct breeds of goats"
+      "Goats have rectangular pupils that allow them to see 320-340 degrees around them",
+      "They have excellent balance and can climb trees and steep mountains",
+      "Goats are very social animals and can become depressed if kept alone",
+      "They have accents! Goats living in different regions develop distinct calls",
+      "Goats have four stomachs to help them digest tough plant material",
+      "Baby goats (kids) can stand and walk within minutes of being born"
     ],
     names: {
       descriptive: [
-        "Climber the Agile",
-        "Billy the Bold",
-        "Mountain the Sturdy",
-        "Nibbler the Curious",
-        "Rambler the Explorer",
+        "Mountain King",
+        "Cliff Jumper",
+        "Nimble Hooves",
         "Bearded One",
-        "Horned the Proud",
-        "Bleater the Vocal",
-        "Leaper the Nimble",
-        "Grazer the Hungry"
+        "Horned Guardian",
+        "Valley Climber",
+        "Meadow Grazer",
+        "Highland Wanderer",
+        "Rocky the Climber",
+        "Summit Seeker"
       ],
       funny: [
-        "Sir Bleats-a-lot",
-        "Tin Can",
-        "Lawn Mower",
-        "Billy the Kid",
+        "Sir Bleats-a-Lot",
         "Goatzilla",
+        "Billy the Kid",
+        "Lawn Mower",
+        "Tin Can Muncher",
+        "Beard Master",
+        "Head Butter",
+        "Yoga Goat",
         "Escape Artist",
-        "Yoga Master",
-        "Beard-o",
-        "Headbutter",
-        "Mountain Dew"
+        "Fainting Frank"
       ],
       cute: [
         "Pebbles",
         "Buttons",
         "Clover",
-        "Pepper",
         "Daisy",
         "Nibbles",
         "Peanut",
-        "Oreo",
-        "Cookie",
-        "Sprinkles"
+        "Sprinkles",
+        "Toffee",
+        "Marshmallow",
+        "Blossom"
       ],
       male: getRandomNames(goatNames.names.male, 30),
       female: getRandomNames(goatNames.names.female, 30)
+    }
+  },
+  goose: {
+    facts: [
+      "Geese are highly territorial and protective of their young",
+      "They mate for life and can live up to 25 years in the wild",
+      "Geese fly in a V formation to conserve energy during migration",
+      "They have excellent vision and can see almost 360 degrees around them",
+      "Geese have strong family bonds and raise their young together",
+      "They communicate with over 10 different calls for various situations",
+      "Geese have serrated beaks that help them grip slippery food"
+    ],
+    names: {
+      descriptive: [
+        "Sky Voyager",
+        "Feathered Guardian",
+        "Lake Patroller",
+        "Honking Sentinel",
+        "Migration Leader",
+        "Pond Protector",
+        "Wing Commander",
+        "Flock Navigator",
+        "Territorial Watcher",
+        "Waterway Warden"
+      ],
+      funny: [
+        "Honk Master",
+        "Sir Hisses-a-Lot",
+        "Bread Bandit",
+        "Park Patroller",
+        "Feathered Fury",
+        "Pond Boss",
+        "Goosezilla",
+        "Waddle King",
+        "Hiss Machine",
+        "Lawn Invader"
+      ],
+      cute: [
+        "Pebble",
+        "Feather",
+        "Waddles",
+        "Fluff",
+        "Piper",
+        "Bubbles",
+        "Quill",
+        "Ripple",
+        "Downy",
+        "Puff"
+      ],
+      male: getRandomNames(gooseNames.names.male, 30),
+      female: getRandomNames(gooseNames.names.female, 30)
+    }
+  },
+  guineaPig: {
+    facts: [
+      "Guinea pigs are not actually pigs, but rodents native to South America",
+      "They purr when content, similar to cats",
+      "Guinea pigs are born with their eyes open and fully furred",
+      "They have an excellent memory and can recognize their owners",
+      "Guinea pigs need vitamin C in their diet as they cannot produce it naturally",
+      "They communicate through a variety of sounds including whistles, purrs, and rumbles",
+      "Guinea pigs can live up to 8 years with proper care"
+    ],
+    names: {
+      descriptive: [
+        "Caramel Fluff",
+        "Silky Whiskers",
+        "Gentle Explorer",
+        "Curious Nibbler",
+        "Contented Purrer",
+        "Fuzzy Navigator",
+        "Wheeker the Vocal",
+        "Tiny Adventurer",
+        "Pocket Companion",
+        "Velvet Paws"
+      ],
+      funny: [
+        "Sir Squeaksalot",
+        "Potato the Round",
+        "Fluffernutter",
+        "Captain Wheek",
+        "Piggy Smalls",
+        "Hairy Potter",
+        "Veggie Vacuum",
+        "Furry Fury",
+        "Squeak Machine",
+        "Hay Destroyer"
+      ],
+      cute: [
+        "Bean",
+        "Buttons",
+        "Cinnamon",
+        "Peanut",
+        "Muffin",
+        "Nugget",
+        "Oreo",
+        "Pepper",
+        "Snickerdoodle",
+        "Truffle"
+      ],
+      male: getRandomNames(guineaPigNames.names.male, 30),
+      female: getRandomNames(guineaPigNames.names.female, 30)
+    }
+  },
+  hamster: {
+    facts: [
+      "Hamsters have pouches in their cheeks that can expand to three times the size of their head",
+      "They are nocturnal animals, most active during the night",
+      "Hamsters can run up to 8 miles a night on their exercise wheel",
+      "Their teeth never stop growing throughout their lifetime",
+      "Hamsters are solitary animals that prefer to live alone",
+      "They have poor eyesight but excellent sense of smell",
+      "Hamsters can store up to a week's worth of food in their burrows"
+    ],
+    names: {
+      descriptive: [
+        "Pocket Explorer",
+        "Cheek Stuffer",
+        "Midnight Runner",
+        "Tiny Burrower",
+        "Seed Collector",
+        "Wheel Spinner",
+        "Fluffy Navigator",
+        "Curious Whiskers",
+        "Tiny Adventurer",
+        "Nocturnal Wanderer"
+      ],
+      funny: [
+        "Sir Stuffs-a-Lot",
+        "Hammy Houdini",
+        "Cheeks McGee",
+        "Fuzzy McFlufferson",
+        "Wheel Warrior",
+        "Sunflower Bandit",
+        "Escape Artist",
+        "Tiny Terror",
+        "Seed Hoarder",
+        "Pocket Rocket"
+      ],
+      cute: [
+        "Bean",
+        "Button",
+        "Cookie",
+        "Peanut",
+        "Nugget",
+        "Mochi",
+        "Pebble",
+        "Pip",
+        "Nibbles",
+        "Biscuit"
+      ],
+      male: getRandomNames(hamsterNames.names.male, 30),
+      female: getRandomNames(hamsterNames.names.female, 30)
+    }
+  },
+  hedgehog: {
+    facts: [
+      "Hedgehogs have between 5,000 and 7,000 spines on their back",
+      "They can roll into a tight ball when threatened",
+      "Hedgehogs are immune to many toxins, including snake venom",
+      "They are primarily nocturnal animals",
+      "Hedgehogs can swim and climb well",
+      "Baby hedgehogs are called hoglets",
+      "They have poor eyesight but excellent hearing and sense of smell"
+    ],
+    names: {
+      descriptive: [
+        "Spiny Defender",
+        "Night Explorer",
+        "Prickly Wanderer",
+        "Quill Master",
+        "Nocturnal Navigator",
+        "Garden Guardian",
+        "Insect Hunter",
+        "Spiky Survivor",
+        "Twilight Forager",
+        "Thorny Protector"
+      ],
+      funny: [
+        "Sir Pricks-a-Lot",
+        "Spike Lee",
+        "Pokey McPokerson",
+        "Sonic the Slow",
+        "Needle Noggin",
+        "Prickle Muffin",
+        "Quill Smith",
+        "Spiny Norman",
+        "Rolly Poly",
+        "Pincushion Pete"
+      ],
+      cute: [
+        "Prickles",
+        "Button",
+        "Thistle",
+        "Needle",
+        "Pip",
+        "Clover",
+        "Bramble",
+        "Pebble",
+        "Acorn",
+        "Sprout"
+      ],
+      male: getRandomNames(hedgehogNames.names.male, 30),
+      female: getRandomNames(hedgehogNames.names.female, 30)
+    }
+  },
+  hermitCrab: {
+    facts: [
+      "Hermit crabs don't grow their own shells but find and inhabit empty shells",
+      "They can live up to 30 years in the wild",
+      "Hermit crabs have gills and need humidity to breathe",
+      "They are social creatures that thrive in groups",
+      "Hermit crabs can regenerate lost limbs",
+      "They communicate through chirping sounds made by rubbing their legs together",
+      "Hermit crabs regularly upgrade to larger shells as they grow"
+    ],
+    names: {
+      descriptive: [
+        "Shell Seeker",
+        "Tide Pool Explorer",
+        "Sandy Wanderer",
+        "Shell Changer",
+        "Beach Comber",
+        "Coastal Crawler",
+        "Ocean Dweller",
+        "Borrowed Home",
+        "Shoreline Scuttler",
+        "Reef Rambler"
+      ],
+      funny: [
+        "Shell Shocked",
+        "Home Mover",
+        "Scuttle Bug",
+        "Crabby Patty",
+        "Shell Shopper",
+        "Real Estate Agent",
+        "Mobile Home",
+        "Pinchy McPincherson",
+        "Sideways Walker",
+        "Shell Game"
+      ],
+      cute: [
+        "Pebble",
+        "Bubbles",
+        "Sandy",
+        "Shelly",
+        "Pearl",
+        "Coral",
+        "Scuttle",
+        "Tiny",
+        "Hermie",
+        "Coco"
+      ],
+      male: getRandomNames(hermitCrabNames.names.male, 30),
+      female: getRandomNames(hermitCrabNames.names.female, 30)
     }
   }
 };

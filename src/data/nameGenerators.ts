@@ -34,6 +34,11 @@ import foxNames from './fox_names.json';
 import frogNames from './frog_names.json';
 import giraffeNames from './giraffe_names.json';
 import goatNames from './goat_names.json';
+import gooseNames from './goose_names.json';
+import guineaPigNames from './guinea_pig_names.json';
+import hamsterNames from './hamster_names.json';
+import hedgehogNames from './hedgehog_names.json';
+import hermitCrabNames from './hermit_crab_names.json';
 
 // Map to store all loaded name generators
 const nameGenerators: Record<string, AnimalNames> = {
@@ -72,6 +77,13 @@ const nameGenerators: Record<string, AnimalNames> = {
   frog: frogNames as AnimalNames,
   giraffe: giraffeNames as AnimalNames,
   goat: goatNames as AnimalNames,
+  goose: gooseNames as AnimalNames,
+  "guinea pig": guineaPigNames as AnimalNames,
+  guineapig: guineaPigNames as AnimalNames,
+  hamster: hamsterNames as AnimalNames,
+  hedgehog: hedgehogNames as AnimalNames,
+  "hermit crab": hermitCrabNames as AnimalNames,
+  hermitcrab: hermitCrabNames as AnimalNames,
 };
 
 /**
@@ -93,9 +105,23 @@ export function generateAnimalName(animal: AnimalType): string {
  * @returns An array of random names
  */
 export function getRandomNames(animal: AnimalType, gender: 'male' | 'female', count: number = 10): string[] {
-  const generator = nameGenerators[animal.toLowerCase()];
+  // First try with the original animal name
+  let generator = nameGenerators[animal];
+  
   if (!generator) {
-    throw new Error(`No name generator found for animal type: ${animal}`);
+    // If not found, try with the normalized version (for backward compatibility)
+    const normalizedAnimal = animal.replace(/\s+(.)/g, (_, char) => char.toUpperCase()).replace(/\s/g, '').toLowerCase();
+    generator = nameGenerators[normalizedAnimal];
+    
+    // If still not found, try with the lowercase version
+    if (!generator) {
+      generator = nameGenerators[animal.toLowerCase()];
+    }
+    
+    if (!generator) {
+      console.error(`No name generator found for animal type: ${animal}`);
+      throw new Error(`No name generator found for animal type: ${animal}`);
+    }
   }
 
   const names = generator.names[gender];
