@@ -38,6 +38,11 @@ import guineaPigNames from './guinea_pig_names.json';
 import hamsterNames from './hamster_names.json';
 import hedgehogNames from './hedgehog_names.json';
 import hermitCrabNames from './hermit_crab_names.json';
+import hippoNames from './hippo_names.json';
+import horseNames from './horse_names.json';
+import hyenaNames from './hyena_names.json';
+import iguanaNames from './iguana_names.json';
+import jellyfishNames from './jellyfish_names.json';
 
 // Helper function to get random names from an array
 function getRandomNames(names: string[], count: number): string[] {
@@ -2050,13 +2055,13 @@ export const animalData: Record<string, AnimalData> = {
   },
   hermitCrab: {
     facts: [
-      "Hermit crabs don't grow their own shells but find and inhabit empty shells",
+      "Hermit crabs use empty snail shells as portable homes",
+      "There are over 800 species of hermit crabs worldwide",
+      "Hermit crabs have specialized appendages to hold their shell in place",
       "They can live up to 30 years in the wild",
-      "Hermit crabs have gills and need humidity to breathe",
-      "They are social creatures that thrive in groups",
-      "Hermit crabs can regenerate lost limbs",
-      "They communicate through chirping sounds made by rubbing their legs together",
-      "Hermit crabs regularly upgrade to larger shells as they grow"
+      "Hermit crabs are social animals that thrive in groups",
+      "They have a keen sense of smell to find food and shells",
+      "Hermit crabs molt their exoskeleton as they grow"
     ],
     names: {
       descriptive: [
@@ -2095,8 +2100,263 @@ export const animalData: Record<string, AnimalData> = {
         "Hermie",
         "Coco"
       ],
-      male: getRandomNames(hermitCrabNames.names.male, 30),
-      female: getRandomNames(hermitCrabNames.names.female, 30)
+      male: getRandomNames(hermitCrabNames.names.male, 10),
+      female: getRandomNames(hermitCrabNames.names.female, 10)
+    }
+  },
+  hippo: {
+    facts: [
+      "Hippos can hold their breath underwater for up to 5 minutes",
+      "Despite weighing up to 4,500 kg, hippos can run at speeds of 30 km/h",
+      "Hippo skin secretes a natural sunscreen substance that appears red",
+      "They are among the most dangerous animals in Africa, causing many human fatalities",
+      "Hippos spend up to 16 hours a day in water to keep cool",
+      "A group of hippos is called a bloat, pod, or herd",
+      "Baby hippos can suckle underwater by closing their ears and nostrils"
+    ],
+    names: {
+      descriptive: [
+        "River Giant",
+        "Water Colossus",
+        "Mighty Jaws",
+        "Aquatic Titan",
+        "Mud Wallower",
+        "Riverbank Guardian",
+        "Massive Grazer",
+        "Territorial Defender",
+        "Submerged Sentinel",
+        "Powerful Swimmer"
+      ],
+      funny: [
+        "Chunky Dunker",
+        "Sir Soaks-a-Lot",
+        "Tubby Torpedo",
+        "Mouth Mammoth",
+        "Blubber Bubbles",
+        "Water Melon",
+        "Hippo-potamus Rex",
+        "Yawn Master",
+        "Splashy McSplashface",
+        "Mud Muffin"
+      ],
+      cute: [
+        "Bubbles",
+        "Waddles",
+        "Plumpy",
+        "Squish",
+        "Puddles",
+        "Chompy",
+        "Tubs",
+        "Pebbles",
+        "Moto",
+        "Poppy"
+      ],
+      male: getRandomNames(hippoNames.names.male, 10),
+      female: getRandomNames(hippoNames.names.female, 10)
+    }
+  },
+  horse: {
+    facts: [
+      "Horses have the largest eyes of any land mammal",
+      "A horse's teeth take up more space in their head than their brain",
+      "Horses can sleep both standing up and lying down",
+      "The oldest horse on record lived to be 62 years old",
+      "Horses have nearly 360-degree vision",
+      "A horse's heart weighs about 10 pounds",
+      "Horses have been domesticated for over 5,000 years"
+    ],
+    names: {
+      descriptive: [
+        "Swift Runner",
+        "Majestic Galloper",
+        "Noble Steed",
+        "Graceful Trotter",
+        "Powerful Stallion",
+        "Elegant Mare",
+        "Spirited Charger",
+        "Steadfast Companion",
+        "Mighty Racer",
+        "Gentle Giant"
+      ],
+      funny: [
+        "Neigh-sayer",
+        "Hoof Hearted",
+        "Sir Trots-a-Lot",
+        "Mane Attraction",
+        "Hay There",
+        "Whinny Cooper",
+        "Gallop Poll",
+        "Colt Forty-Five",
+        "Pony Express",
+        "Horsepower"
+      ],
+      cute: [
+        "Pepper",
+        "Dusty",
+        "Sugar",
+        "Cinnamon",
+        "Daisy",
+        "Biscuit",
+        "Honey",
+        "Ginger",
+        "Clover",
+        "Willow"
+      ],
+      male: getRandomNames(horseNames.names.male, 10),
+      female: getRandomNames(horseNames.names.female, 10)
+    }
+  },
+  hyena: {
+    facts: [
+      "Female hyenas are larger and more dominant than males",
+      "Hyenas can digest bones, hooves, and even teeth",
+      "Their 'laugh' is actually a sound of submission or excitement",
+      "Hyenas are more closely related to cats than dogs",
+      "They have one of the strongest bites in the animal kingdom",
+      "Hyena cubs are born with their eyes open and teeth already emerged",
+      "They can run at speeds of up to 60 km/h (37 mph)"
+    ],
+    names: {
+      descriptive: [
+        "Spotted Hunter",
+        "Bone Crusher",
+        "Savanna Scout",
+        "Night Prowler",
+        "Powerful Jaws",
+        "Skilled Tracker",
+        "Clan Leader",
+        "Laughing Predator",
+        "Scavenger Supreme",
+        "Resilient Survivor"
+      ],
+      funny: [
+        "Giggle Monster",
+        "Cackle Pants",
+        "Bone Appetit",
+        "Laugh Track",
+        "Chuckles McGee",
+        "Howling Hysterics",
+        "Snicker Doodle",
+        "Grin Reaper",
+        "Laughing Stock",
+        "Chortles"
+      ],
+      cute: [
+        "Spots",
+        "Giggles",
+        "Freckles",
+        "Dotty",
+        "Chuckles",
+        "Speckles",
+        "Snickers",
+        "Patches",
+        "Cackles",
+        "Pebble"
+      ],
+      male: getRandomNames(hyenaNames.names.male, 10),
+      female: getRandomNames(hyenaNames.names.female, 10)
+    }
+  },
+  iguana: {
+    facts: [
+      "Iguanas can detach their tails when threatened and regrow them",
+      "They have a third eye on top of their head that detects light changes",
+      "Iguanas can hold their breath underwater for up to 30 minutes",
+      "They can live up to 20 years in captivity",
+      "Iguanas communicate through head bobs, dewlap extensions, and tail whips",
+      "They can grow up to 6 feet long including their tail",
+      "Iguanas are excellent swimmers and can dive up to 100 feet underwater"
+    ],
+    names: {
+      descriptive: [
+        "Scaled Sentinel",
+        "Sun Basker",
+        "Crest Master",
+        "Dewlap Displayer",
+        "Tail Whipper",
+        "Tree Climber",
+        "Spiny Crested",
+        "Emerald Scaler",
+        "Ancient Reptile",
+        "Tropical Dweller"
+      ],
+      funny: [
+        "Sir Scales-a-Lot",
+        "Iggy Azalea",
+        "Lizard Wizard",
+        "Lounge Lizard",
+        "Reptile Dysfunction",
+        "Iggy Pop",
+        "Scaly McScaleface",
+        "Dewlap Dude",
+        "Cold Blooded Cutie",
+        "Bobzilla"
+      ],
+      cute: [
+        "Spike",
+        "Ziggy",
+        "Scales",
+        "Emerald",
+        "Jade",
+        "Pebble",
+        "Sunny",
+        "Gecko",
+        "Iggy",
+        "Olive"
+      ],
+      male: getRandomNames(iguanaNames.names.male, 10),
+      female: getRandomNames(iguanaNames.names.female, 10)
+    }
+  },
+  jellyfish: {
+    facts: [
+      "Jellyfish have existed for over 650 million years, predating dinosaurs",
+      "They have no brain, heart, bones, or eyes",
+      "Some jellyfish are biologically immortal, capable of reverting to an earlier life stage",
+      "A group of jellyfish is called a bloom, swarm, or smack",
+      "They are 95% water and can have up to 24 eyes",
+      "The largest jellyfish can have tentacles up to 120 feet long",
+      "Jellyfish move by pulsing their bell-shaped bodies"
+    ],
+    names: {
+      descriptive: [
+        "Luminous Drifter",
+        "Ocean Pulse",
+        "Tentacle Dancer",
+        "Transparent Floater",
+        "Gelatinous Wanderer",
+        "Deep Sea Glider",
+        "Current Rider",
+        "Stinging Bloom",
+        "Bioluminescent Beauty",
+        "Graceful Umbrella"
+      ],
+      funny: [
+        "Jelly Belly",
+        "Squishy McSquishface",
+        "Tentacool",
+        "Wobble Wobble",
+        "Peanut Butter's Nemesis",
+        "Jam Session",
+        "Jiggle Physics",
+        "Brainless Wonder",
+        "Sting Operation",
+        "Gelatinous Maximus"
+      ],
+      cute: [
+        "Bubbles",
+        "Squish",
+        "Jelly",
+        "Bloop",
+        "Floaty",
+        "Wiggles",
+        "Sparkle",
+        "Glimmer",
+        "Pulsie",
+        "Wobbles"
+      ],
+      male: getRandomNames(jellyfishNames.names.male, 10),
+      female: getRandomNames(jellyfishNames.names.female, 10)
     }
   }
 };

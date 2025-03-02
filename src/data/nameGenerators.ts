@@ -39,6 +39,11 @@ import guineaPigNames from './guinea_pig_names.json';
 import hamsterNames from './hamster_names.json';
 import hedgehogNames from './hedgehog_names.json';
 import hermitCrabNames from './hermit_crab_names.json';
+import hippoNames from './hippo_names.json';
+import horseNames from './horse_names.json';
+import hyenaNames from './hyena_names.json';
+import iguanaNames from './iguana_names.json';
+import jellyfishNames from './jellyfish_names.json';
 
 // Map to store all loaded name generators
 const nameGenerators: Record<string, AnimalNames> = {
@@ -84,6 +89,11 @@ const nameGenerators: Record<string, AnimalNames> = {
   hedgehog: hedgehogNames as AnimalNames,
   "hermit crab": hermitCrabNames as AnimalNames,
   hermitcrab: hermitCrabNames as AnimalNames,
+  hippo: hippoNames as AnimalNames,
+  horse: horseNames as AnimalNames,
+  hyena: hyenaNames as AnimalNames,
+  iguana: iguanaNames as AnimalNames,
+  jellyfish: jellyfishNames as AnimalNames,
 };
 
 /**

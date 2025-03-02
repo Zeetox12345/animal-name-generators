@@ -241,6 +241,36 @@ const animals = [
     path: "/hermit-crab",
     description: "Generate unique names for these shell-dwelling creatures.",
     image: "/lovable-uploads/hermit_crab.png"
+  },
+  {
+    name: "Hippo",
+    path: "/hippo",
+    description: "Create powerful names for these water-loving giants.",
+    image: "/lovable-uploads/hippo.png"
+  },
+  {
+    name: "Horse",
+    path: "/horse",
+    description: "Find majestic names for these noble and graceful animals.",
+    image: "/lovable-uploads/horse.png"
+  },
+  {
+    name: "Hyena",
+    path: "/hyena",
+    description: "Generate clever names for these intelligent predators.",
+    image: "/lovable-uploads/hyena.png"
+  },
+  {
+    name: "Iguana",
+    path: "/iguana",
+    description: "Discover exotic names for these fascinating reptiles.",
+    image: "/lovable-uploads/iguana.png"
+  },
+  {
+    name: "Jellyfish",
+    path: "/jellyfish",
+    description: "Create flowing names for these mesmerizing ocean creatures.",
+    image: "/lovable-uploads/jellyfish.png"
   }
 ];
 

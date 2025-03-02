@@ -46,6 +46,11 @@ import GuineaPig from "./pages/GuineaPig";
 import Hamster from "./pages/Hamster";
 import Hedgehog from "./pages/Hedgehog";
 import HermitCrab from "./pages/HermitCrab";
+import Hippo from "./pages/Hippo";
+import Horse from "./pages/Horse";
+import Hyena from "./pages/Hyena";
+import Iguana from "./pages/Iguana";
+import Jellyfish from "./pages/Jellyfish";
 
 const queryClient = new QueryClient();
 
@@ -98,6 +103,11 @@ const App = () => (
             <Route path="/hamster" element={<Hamster />} />
             <Route path="/hedgehog" element={<Hedgehog />} />
             <Route path="/hermit-crab" element={<HermitCrab />} />
+            <Route path="/hippo" element={<Hippo />} />
+            <Route path="/horse" element={<Horse />} />
+            <Route path="/hyena" element={<Hyena />} />
+            <Route path="/iguana" element={<Iguana />} />
+            <Route path="/jellyfish" element={<Jellyfish />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </BrowserRouter>
